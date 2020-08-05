@@ -8,7 +8,7 @@ body, html {
     background-color: #2D8736!important;
   }
 
-input:focus{
+input:focus, textarea{
     outline: none;
   }
   
@@ -24,23 +24,23 @@ input:focus{
     margin-top: 5px;
     height: 60px;
 }
-.menu-menu{
+.menu-list{
     list-style-type: none;
     display: flex;
     margin: 0;
     height: 100%;
 }
-.menu-menu .nav-link{
+.menu-list .nav-link{
     text-decoration: none;
     color: black!important;
     font-size: 18px;
 }
-.menu-menu li{
+.menu-list li{
     padding: 5px 15px;
     align-items: center;
     position: relative;
 }
-.menu-menu li:hover .nav-link{
+.menu-list li:hover .nav-link{
     color: #2D8736!important;
     text-decoration: none;
 }
@@ -61,6 +61,48 @@ input:focus{
 .dropdown-item{
     font-size: 20px!important;
 }
+@media only screen and (max-width: 1440px) {
+    .menu{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: white;
+        position: relative;
+    }
+    .menu-logo img{
+        margin:0px 10px;
+        margin-top: 5px;
+        height: 40px;
+    }
+    .menu-list .nav-link{
+        text-decoration: none;
+        color: black!important;
+        font-size: 12px;
+    }
+    .menu-list li{
+        padding: 3px 10px;
+        align-items: center;
+        position: relative;
+    }
+    .menu-user{
+        display: flex;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .menu-user img{
+        height: 40px;
+    }
+    .menu-user p{
+        line-height: 40px;
+        margin-right:5px ;
+        font-size: 12px;
+    }
+    .dropdown-item{
+        font-size: 12px!important;
+    }
+}
+
 
 /* *****************************************************   CONTAINER   ************************************************************** */
 
@@ -97,17 +139,56 @@ input:focus{
     color:red;
     margin:10px;
 }
-
+@media only screen and (max-width: 1440px) {
+    .containerr{
+        display: flex;
+        padding: 0px 15px;
+    }
+    .container-child{
+        display: flex;
+        background-color: white;
+        height: 110px;
+        width:25%;
+        margin-top: 30px;
+        margin-left:15px;
+        margin-right:15px;
+    }
+    .container-child img{
+        height: 70px;
+        margin: 20px;
+    }
+    .container-number{
+        margin:20px;
+        flex-grow: 4;
+        border: 2px solid #2D8736;
+        border-radius: 5px;
+        height: 50px;
+        text-align: center;
+    }
+    .container-number span{
+        font-size: 30px;
+    }
+    .container-number p{
+        font-size: 16px;
+        color:red;
+        margin:10px;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .container-number p{
+        font-size: 11px;
+    }
+}
 /* *******************************************************   CHART  *************************************************************************** */
 
 .groupchart{
     margin:30px;
     border:3px solid white;
 }
-.groupchart_title{
+.groupchart-title{
     color:white;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
     padding: 10px ;
     background-color: #085805;
