@@ -71,7 +71,7 @@ input:focus{
 .find label{
     color:white;
 }
-input[type=text] {
+.find input[type=text] {
     width:300px;
     padding: 12px 20px;
     margin: 4px 0;
@@ -83,7 +83,7 @@ input[type=text] {
     height: 30px;
     margin-right: 30px;
   }
-  input[type=date] {
+.find input[type=date] {
     padding:2px;
     width:300px;
     margin: 4px 0;
@@ -95,7 +95,7 @@ input[type=text] {
     margin-right: 30px;
   }
   
-  input[type=submit] {
+.find input[type=submit] {
     width: 200px;
     background-color: #DA1930;
     border-radius: 4px;
@@ -108,7 +108,7 @@ input[type=text] {
     font-weight: bold;
   }
   
-  input[type=submit]:hover {
+.find input[type=submit]:hover {
     background-color: #ff4d4d;
   }
 

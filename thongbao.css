@@ -83,7 +83,7 @@ input:focus,textarea{
 .addnotification-content{
     padding:0px;
 }
-input[type=text], textarea {
+.addnotification input[type=text], textarea {
     width:350px;
     padding: 12px 20px;
     margin-bottom: 100px;
@@ -95,7 +95,7 @@ input[type=text], textarea {
     height: 30px;
     margin-right: 30px;
   }
-  textarea {
+.addnotification textarea {
     width:650px;
     padding: 12px 20px;
     margin: 4px 0;
@@ -108,7 +108,7 @@ input[type=text], textarea {
     margin-right: 30px;
   }
   
-  input[type=submit] {
+.addnotification input[type=submit] {
     height: 34px;
     width: 150px;
     background-color: white;
@@ -123,7 +123,7 @@ input[type=text], textarea {
     font-weight: bold;
   }
   
-  input[type=submit]:hover {
+.addnotification input[type=submit]:hover {
     background-color: #085805;
     color:white;
   }
