@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='thongbao.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<!-- *******************************************************   MENU   ************************************************************* -->
+<nav class="menu navbar navbar-expand-sm navbar-dark">
+    <div class="menu-logo">
+        <img src="./img/Logo-HNK-VN.png" alt="">
+    </div>
+    <ul class="navbar-nav menu-menu">
+      <li class="nav-item">
+        <a class="nav-link" href="#">TRANG CHỦ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CHẤM CÔNG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">THÔNG BÁO</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            BÁO CÁO
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            QUẢN TRỊ
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">QUẢN LÝ NV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOẠT ĐỘNG</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            QUẢN LÝ QUÀ
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="menu-user">
+        <p>TÊN TÀI KHOẢN</p>
+        <img src="./img/unnamed.png" alt="">
+    </div>
+  </nav>
+
+
+    <!-- *******************************************************   THEM THONG BAO   ************************************************************* -->
+    <div class="addnotification">
+        <div class="addnotification-title">
+            <label for="">Tiêu Đề:<br /> <input type="text" name="" placeholder=""></label><br />
+            <label for="">Siêu Thị:<br /> 
+            <select class="browser-default custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              </label>
+        </div>
+        <div class="addnotification-content">
+            <label for="">Nội Dung:<br /> <textarea type="text" name="" placeholder=""></textarea>
+        </div>
+        <input type="submit" value="Thêm">
+    </div>
+
+
+    <!-- ***************************************************   DANH SÁCH THÔNG BÁO   ********************************************************** -->
+    <div class="notification">
+        <div class="notification-title">DANH SÁCH THÔNG BÁO</div>
+        <table class="table table-bordered listnotification">
+            <thead>
+                <tr>
+                    <th scope="col">Ngày</th>
+                    <th scope="col">Tiêu Đề</th>
+                    <th scope="col">Nội Dung</th>
+                    <th scope="col">Siêu Thị</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="color:red">28/08/2020</td>
+                    <td>Thông báo về việc upload dữ liệu lên server</td>
+                    <td>IT xin lưu ý các bạn về việc tải dữ liệu về chính xác và đảm bảo về thời
+                        gian . Các bạn phải Upload tất cả dữ liệu đã làm về server trong ngày
+                        làm việc của mình . Không để qua ngày hôm sau.Mong các bạn lưu ý và
+                        thực hiện đúng.</td>
+                    <td>BigC Thảo Điền</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

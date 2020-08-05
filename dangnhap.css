@@ -1,0 +1,49 @@
+body{
+    background-color: #058400;
+}
+.login_logo{
+    width: 100%;
+    text-align: center;
+    margin-top:200px
+}
+.login_logo img{
+    height:100px;
+    padding-right: 20px;
+}
+.login_form{
+    margin:30px auto;
+    width:550px;
+    height: 150px;
+    background-color:white;
+    border-radius: 5px;
+    /* background-image: url(./img/Intersection3.png); */
+    padding:20px;
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #E0E0E0;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #085805;
+    color: white;
+    padding: 10px 20px;
+    margin: 4px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }

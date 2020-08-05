@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='chamcong.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+<!-- *******************************************************   MENU   ************************************************************* -->
+
+<nav class="menu navbar navbar-expand-sm navbar-dark">
+    <div class="menu-logo">
+        <img src="./img/Logo-HNK-VN.png" alt="">
+    </div>
+    <ul class="navbar-nav menu-menu">
+      <li class="nav-item">
+        <a class="nav-link" href="#">TRANG CHỦ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CHẤM CÔNG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">THÔNG BÁO</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            BÁO CÁO
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            QUẢN TRỊ
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">QUẢN LÝ NV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOẠT ĐỘNG</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            QUẢN LÝ QUÀ
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+    </ul>
+
+    <div class="menu-user">
+        <p>TÊN TÀI KHOẢN</p>
+        <img src="./img/unnamed.png" alt="">
+    </div>
+  </nav>
+
+ <!-- *******************************************************   TIM KIEM   ************************************************************* -->
+
+ <div class="find">
+    <label for="">Ngày Bắt Đầu:<br/> <input type="date" name=""></label>
+    <label for="">Ngày Kết Thúc:<br/> <input type="date" name=""></label>
+    <label for="">Vùng:<br/> <input type="text" name="" placeholder="Vùng"></label>
+    <label for="">Team:<br/>  <input type="text" name="" placeholder="Team"></label>
+    <input type="submit" value="Tìm">
+</div>
+
+<!-- ***************************************************   DANH SÁCH CHẤM CÔNG   ********************************************************** -->
+<div class="timekeeping">
+    <div class="timekeeping-title">THỐNG KÊ SET QUÀ THEO ĐỊA BÀN</div>
+    <div class="timekeeping-exportfile">
+        <div>
+            <a href="" id="excel">
+                <img src="./img/excel.png" alt="">
+                Xuất File
+            </a>
+        </div>
+    </div>
+    <table id="customers">
+        <tr>
+            <th>Kênh</th>
+            <th>Tên Team</th>
+            <th>Ngày Chấm Công</th>
+            <th>Vào</th>
+            <th>Ra</th>
+        </tr>
+        <tr>
+            <td>co.opmart</td>
+            <td>co.opmart Tuy Lúy Vương Ca1</td>
+            <td>02/02/2020</td>
+            <td><img src="./img/vao.png" alt=""></td>
+            <td><img src="./img/ra.png" alt=""></td>
+        </tr>
+    </table>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

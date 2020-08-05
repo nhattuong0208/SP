@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='trangchu.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+<!-- *******************************************************   MENU   ************************************************************* -->
+
+    <nav class="menu navbar navbar-expand-sm navbar-dark">
+        <div class="menu-logo">
+            <img src="./img/Logo-HNK-VN.png" alt="">
+        </div>
+        <ul class="navbar-nav menu-menu">
+          <li class="nav-item">
+            <a class="nav-link" href="#">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CHẤM CÔNG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">THÔNG BÁO</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                BÁO CÁO
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                QUẢN TRỊ
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">QUẢN LÝ NV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HOẠT ĐỘNG</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                QUẢN LÝ QUÀ
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+        </ul>
+
+        <div class="menu-user">
+            <p>TÊN TÀI KHOẢN</p>
+            <img src="./img/unnamed.png" alt="">
+        </div>
+      </nav>
+
+<!-- *******************************************************   CONTAINER   ************************************************************* -->
+
+    <div class="containerr">
+        <div class="container-child">
+            <img src="./img/hoatdong.png" alt="">
+            <div class="container-number">
+                <span style="color: red;">12</span>
+                <span style="color: #2D8736;">/22</span>
+                <p>ĐANG HOẠT ĐỘNG</p>
+            </div>
+        </div>
+        <div class="container-child">
+            <img src="./img/vipham.png" alt="">
+            <div class="container-number">
+                <span style="color: red;">85</span>
+                <span style="color: #2D8736;">/1567</span>
+                <p>SP VI PHẠM</p>
+            </div>
+        </div>
+        <div class="container-child">
+            <img src="./img/setqua.png" alt="">
+            <div class="container-number">
+                <span style="color:#24B7EE;">0-0</span>
+                <span style="color: #2D8736;">/108</span>
+                <p>SET ĐÃ SỬ DỤNG</p>
+            </div>
+        </div>
+        <div class="container-child">
+            <img src="./img/sanluong.png" alt="">
+            <div class="container-number">
+                <span style="color: red;">12</span>
+                <span style="color: #2D8736;">/22</span>
+                <p>SẢN LƯỢNG</p>
+            </div>
+        </div>
+    </div>
+
+
+<!-- *******************************************************   CHART   ************************************************************* -->
+
+    <div class="groupchart">
+        <div class="groupchart_title">THỐNG KÊ SET QUÀ THEO ĐỊA BÀN</div>
+        <div id='myDiv'>
+            <!-- Plotly chart will be drawn inside this DIV -->
+        </div>
+    </div>
+    
+
+    <script>
+        var trace1 = {
+            x: ['An Giang', 'Bạc Liêu', 'Bến Tre','Bình Định','Bình Dương','Bình Phước','Cà Mau','Cần Thơ','Đà Nẵng','Bình Thuận','Đắk Lắk'],
+            y: [20, 14, 23, 70, 50, 23, 20, 14, 23, 14, 23],
+            name: 'cột 1',
+            type: 'bar'
+        };
+        var trace2 = {
+            x: ['An Giang', 'Bạc Liêu', 'Bến Tre','Bình Định','Bình Dương','Bình Phước','Cà Mau','Cần Thơ','Đà Nẵng','Bình Thuận','Đắk Lắk'],
+            y: [10, 10, 50, 10, 10, 10, 70, 10, 10, 10, 10],
+            name: 'cột 2',
+            type: 'bar'
+        };
+
+        var trace3 = {
+            x: ['An Giang', 'Bạc Liêu', 'Bến Tre','Bình Định','Bình Dương','Bình Phước','Cà Mau','Cần Thơ','Đà Nẵng','Bình Thuận','Đắk Lắk'],
+            y: [12, 18, 29, 12, 18, 29, 50, 18, 29, 12, 18],
+            name: 'cột 3',
+            type: 'bar'
+        };
+        var trace4 = {
+            x: ['An Giang', 'Bạc Liêu', 'Bến Tre','Bình Định','Bình Dương','Bình Phước','Cà Mau','Cần Thơ','Đà Nẵng','Bình Thuận','Đắk Lắk'],
+            y: [10, 10, 10 ,65, 10, 10, 10, 10, 80, 10, 10],
+            name: 'cột 4',
+            type: 'bar'
+        };
+        var data = [trace1, trace2, trace3, trace4];
+        var layout = { barmode: 'group' };
+        Plotly.newPlot('myDiv', data, layout);
+    </script>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
