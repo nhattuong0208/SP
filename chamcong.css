@@ -8,7 +8,7 @@ body, html {
     background-color: #2D8736!important;
   }
 
-input:focus{
+input:focus, textarea{
     outline: none;
   }
   
@@ -24,23 +24,23 @@ input:focus{
     margin-top: 5px;
     height: 60px;
 }
-.menu-menu{
+.menu-list{
     list-style-type: none;
     display: flex;
     margin: 0;
     height: 100%;
 }
-.menu-menu .nav-link{
+.menu-list .nav-link{
     text-decoration: none;
     color: black!important;
     font-size: 18px;
 }
-.menu-menu li{
+.menu-list li{
     padding: 5px 15px;
     align-items: center;
     position: relative;
 }
-.menu-menu li:hover .nav-link{
+.menu-list li:hover .nav-link{
     color: #2D8736!important;
     text-decoration: none;
 }
@@ -60,6 +60,47 @@ input:focus{
 }
 .dropdown-item{
     font-size: 20px!important;
+}
+@media only screen and (max-width: 1440px) {
+    .menu{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        background-color: white;
+        position: relative;
+    }
+    .menu-logo img{
+        margin:0px 10px;
+        margin-top: 5px;
+        height: 40px;
+    }
+    .menu-list .nav-link{
+        text-decoration: none;
+        color: black!important;
+        font-size: 12px;
+    }
+    .menu-list li{
+        padding: 3px 10px;
+        align-items: center;
+        position: relative;
+    }
+    .menu-user{
+        display: flex;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+    .menu-user img{
+        height: 40px;
+    }
+    .menu-user p{
+        line-height: 40px;
+        margin-right:5px ;
+        font-size: 12px;
+    }
+    .dropdown-item{
+        font-size: 12px!important;
+    }
 }
 
 /* ****************************************************   TÌM KIẾM   *********************************************************** */
