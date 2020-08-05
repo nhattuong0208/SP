@@ -61,7 +61,7 @@ input:focus, textarea{
 .dropdown-item{
     font-size: 20px!important;
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1650px) {
     .menu{
         width: 100%;
         height: 50px;
@@ -139,7 +139,7 @@ input:focus, textarea{
     color:red;
     margin:10px;
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1650px) {
     .containerr{
         display: flex;
         padding: 0px 15px;
