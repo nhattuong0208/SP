@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='baocaotonkho.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+<!-- *******************************************************   MENU   ************************************************************* -->
+
+<nav class="menu navbar navbar-expand-sm navbar-dark">
+  <div class="menu-logo">
+      <img src="./img/Logo-HNK-VN.png" alt="">
+  </div>
+  <ul class="navbar-nav menu-list">
+    <li class="nav-item">
+      <a class="nav-link" href="#">TRANG CHỦ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">CHẤM CÔNG</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">THÔNG BÁO</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          BÁO CÁO
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          QUẢN TRỊ
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">QUẢN LÝ NV</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">HOẠT ĐỘNG</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          QUẢN LÝ QUÀ
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+  </ul>
+
+  <div class="menu-user">
+      <p>TÊN TÀI KHOẢN</p>
+      <img src="./img/unnamed.png" alt="">
+  </div>
+</nav>
+
+
+ <!-- *******************************************************   TIM KIEM   ************************************************************* -->
+
+ <div class="inventoryfind">
+    <label for="">Ngày:<br/> <input type="date" name=""></label>
+    <label for="">Vùng:<br/> <input type="text" name="" placeholder="Vùng"></label>
+    <label for="">Siêu Thị:<br/> <input type="text" name="" placeholder="Siêu Thị"></label>
+    <label for="">Trạng Thái:<br/>  <input type="text" name="" placeholder="Trạng Thái"></label>
+    <input type="submit" value="Tìm">
+</div>
+
+<!-- ***************************************************   BÁO CÁO TỒN KHO   ********************************************************** -->
+<div class="inventory">
+    <div class="inventory-title">BÁO CÁO TỒN KHO</div>
+    <table class="table table-bordered listinventory">
+        <thead>
+          <tr>
+            <th scope="col" rowspan="3">Vùng</th>
+            <th scope="col" rowspan="3">Ngày</th>
+            <th scope="col" rowspan="3">Siêu Thị</th>
+            <th scope="col" rowspan="3">Tỉnh/Thành</th>
+            <th scope="col" colspan="10">Sản Phẩm</th>
+          </tr>
+          <tr>
+            <th scope="col">Sản Phẩm 1</th>
+            <th scope="col">Sản Phẩm 2</th>
+            <th scope="col">Sản Phẩm 3</th>
+            <th scope="col">Sản Phẩm 4</th>
+            <th scope="col">Sản Phẩm 5</th>
+            <th scope="col">Sản Phẩm 6</th>
+            <th scope="col">Sản Phẩm 7</th>
+            <th scope="col">Sản Phẩm 8</th>
+            <th scope="col">Sản Phẩm 9</th>
+            <th scope="col">Sản Phẩm 10</th>
+          </tr>
+          <tr>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HCM</td>
+            <td>28/08/2020</td>
+            <td>BigC Thảo Điền</td>
+            <td>HCMC</td>
+            <td style="background:#FFC400; color:white;">5</td>
+            <td style="background:#69B22A; color:white">62</td>
+            <td style="background:red; color:white">0</td>
+            <td style="background:#69B22A; color:white">84</td>
+            <td style="background:#69B22A; color:white">95</td>
+            <td style="background:#69B22A; color:white">106</td>
+            <td style="background:#69B22A; color:white">112</td>
+            <td style="background:#69B22A; color:white">95</td>
+            <td style="background:#69B22A; color:white">106</td>
+            <td style="background:#69B22A; color:white">112</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
