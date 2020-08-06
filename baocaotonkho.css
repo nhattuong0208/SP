@@ -171,6 +171,18 @@ input:focus, textarea{
     position: relative;
     border: 2px solid white;
 }
+.inventory .green{
+    background:#69B22A; 
+    color:white;
+}
+.inventory .red{
+    background:red; 
+    color:white;
+}
+.inventory .yellow{
+    background:#FFC400; 
+    color:white;
+}
 .inventory-img img {
     height: auto;
     width: 100%;
