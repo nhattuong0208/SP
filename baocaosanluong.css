@@ -103,42 +103,17 @@ input:focus, textarea{
     }
 }
 
-
-/* ****************************************************   THÊM THÔNG BÁO MỚI   *********************************************************** */
-.addnotification{
+/* ****************************************************   TÌM KIẾM   *********************************************************** */
+.quantityfind{
     padding: 25px 40px;
     background-color: none;
     border-bottom: 1px solid whitesmoke;
-    display: flex;
 }
-.addnotification label{
+.quantityfind label{
     color:white;
-    margin: 0;
 }
-.addnotification-title label{
-    height: 76px;
-    line-height: 29px;
-}
-.addnotification-title select{
-    width:550px
-}
-.addnotification-content{
-    padding:0px;
-}
-.addnotification input[type=text], textarea {
-    width:550px;
-    padding: 12px 20px;
-    margin-bottom: 100px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    background-color: #fcf6f6;
-    height: 40px;
-    margin-right: 50px;
-  }
-.addnotification textarea {
-    width:950px;
+.quantityfind input[type=text] {
+    width:300px;
     padding: 12px 20px;
     margin: 4px 0;
     display: inline-block;
@@ -146,70 +121,56 @@ input:focus, textarea{
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #fcf6f6;
-    height: 115px;
+    height: 40px;
+    margin-right: 30px;
+  }
+  .quantityfind select{
+    width:300px;
+    margin: 4px 0;
+    height: 40px;
+    margin-right: 30px;
+    margin-top:0;
+}
+.quantityfind input[type=date] {
+    height: 40px;
+    padding:2px;
+    width:300px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fcf6f6;
     margin-right: 30px;
   }
   
-.addnotification input[type=submit] {
-    height: 37px;
-    width: 220px;
-    background-color: white;
+.quantityfind input[type=submit] {
+    height: 40px;
+    width: 200px;
+    background-color: #DA1930;
     border-radius: 4px;
-    color: #2D8736;
+    color: white;
     padding: 6px 20px;
-    margin-top: 105px;
-    margin-left: 25px;
+    margin: 4px 0;
     border: none;
     cursor: pointer;
     font-size: 15px;
     font-weight: bold;
   }
   
-.addnotification input[type=submit]:hover {
-    background-color: #085805;
-    color:white;
+.quantityfind input[type=submit]:hover {
+    background-color: #ff4d4d;
   }
-  @media only screen and (max-width: 1760px) {
-    .addnotification-title select{
-        width:450px
-    }
-    .addnotification input[type=text], textarea {
-        width:450px;
-    }
-      .addnotification textarea {
-        width:850px;
-      }
-}
-@media only screen and (max-width: 1560px) {
-    .addnotification-title select{
-        width:350px
-    }
-    .addnotification input[type=text], textarea {
-        width:350px;
-    }
-      .addnotification textarea {
-        width:750px;
-      }
-}
-@media only screen and (max-width: 1360px) {
-    .addnotification-title select{
-        width:300px
-    }
-    .addnotification input[type=text], textarea {
-        width:300px;
-    }
-      .addnotification textarea {
-        width:550px;
-      }
-}
-    /* ****************************************************   DANH SÁCH CHẤM CÔNG   *********************************************************** */
-    .notification{
+
+    /* ****************************************************   BÁO CÁO SẢN LƯỢNG  *********************************************************** */
+    .quantity{
         margin:30px;
         background-color: white;
         position: relative;
         border: 2px solid white;
+        text-align: center;
     }
-    .notification-title{
+    .quantity-title{
         color:white;
         text-align: center;
         font-size: 25px;
@@ -217,12 +178,10 @@ input:focus, textarea{
         padding: 10px;
         background-color: #085805;
     }
-    .listnotification{
+    .listquantity{
         margin-top: 1px;
     }
-    .listnotification th{
+    .listquantity th{
         background-color: #085805;
         color: white;
-        text-align: center;
     }
-
