@@ -171,9 +171,9 @@ input:focus, textarea{
     position: relative;
     border: 2px solid white;
 }
-.stock .green{
-    background:#69B22A; 
-    color:white;
+.stock .grey{
+    background:#80808070; 
+    color:black;
 }
 .stock .red{
     background:red; 
