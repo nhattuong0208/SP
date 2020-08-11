@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='ft-danhsachdenghi.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+<!-- *******************************************************   MENU   ************************************************************* -->
+
+<nav class="menu navbar navbar-expand-sm navbar-dark">
+  <div class="menu-logo">
+      <img src="./img/Logo-HNK-VN.png" alt="">
+  </div>
+  <ul class="navbar-nav menu-list">
+    <li class="nav-item">
+      <a class="nav-link" href="#">TRANG CHỦ</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          BÁO CÁO
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">QUẢN LÝ NV</a>
+    </li>
+  </ul>
+
+  <div class="menu-user">
+      <p>TÊN TÀI KHOẢN</p>
+      <img src="./img/unnamed.png" alt="">
+  </div>
+</nav>
+
+
+ <!-- *******************************************************   TIM KIEM   ************************************************************* -->
+
+ <div class="suggestfind">
+    <label for="">Ngày:<br/> <input type="date" name=""></label>
+    <label for="">Vùng:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Siêu Thị:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Trạng Thái:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <input type="submit" value="Tìm">
+</div>
+
+<!-- ***************************************************   DANH SÁCH STOCK   ********************************************************** -->
+<div class="suggest">
+    <div class="suggest-title">DANH SÁCH ĐỀ NGHỊ</div>
+    <div style="overflow-x:auto;">
+    <table class="table table-bordered listsuggest">
+        <thead>
+          <tr>
+            <th scope="col" rowspan="3">Vùng</th>
+            <th scope="col" rowspan="3">Ngày</th>
+            <th scope="col" rowspan="3">Siêu Thị</th>
+            <th scope="col" rowspan="3">Tỉnh/Thành</th>
+            <th scope="col" colspan="10">Sản Phẩm</th>
+            <th scope="col" rowspan="3">Ghi Chú</th>
+          </tr>
+          <tr>
+            <th scope="col">Sản Phẩm 1</th>
+            <th scope="col">Sản Phẩm 2</th>
+            <th scope="col">Sản Phẩm 3</th>
+            <th scope="col">Sản Phẩm 4</th>
+            <th scope="col">Sản Phẩm 5</th>
+            <th scope="col">Sản Phẩm 6</th>
+            <th scope="col">Sản Phẩm 7</th>
+            <th scope="col">Sản Phẩm 8</th>
+            <th scope="col">Sản Phẩm 9</th>
+            <th scope="col">Sản Phẩm 10</th>
+          </tr>
+          <tr>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="suggest-img"><img src="./img/ken24.png" alt=""></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HCM</td>
+            <td>28/08/2020</td>
+            <td>BigC Thảo Điền</td>
+            <td>HCMC</td>
+            <td class="green">80</td>
+            <td class="green">80</td>
+            <td class="green">80</td>
+            <td class="green">10</td>
+            <td class="green">10</td>
+            <td class="green">10</td>
+            <td>-5</td>
+            <td>-5</td>
+            <td>-5</td>
+            <td>-5</td>
+            <td>Ụ kệ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
