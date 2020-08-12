@@ -217,10 +217,10 @@ input:focus, textarea{
         color:green;
     }
     #customers .warning-red img{
-        height: 50px;
+        height: 30px;
     }
     #customers .warning-green img{
-        height: 50px;
+        height: 30px;
         display: none;
     }
     #customers .warning-green{
