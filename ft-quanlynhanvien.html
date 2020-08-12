@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='ft-quanlynhanvien.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- *******************************************************   MENU   ************************************************************* -->
+
+    <nav class="menu navbar navbar-expand-sm navbar-dark">
+        <div class="menu-logo">
+            <img src="./img/Logo-HNK-VN.png" alt="">
+        </div>
+        <ul class="navbar-nav menu-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                BÁO CÁO
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">QUẢN LÝ NV</a>
+          </li>
+        </ul>
+      
+        <div class="menu-user">
+            <p>TÊN TÀI KHOẢN</p>
+            <img src="./img/unnamed.png" alt="">
+        </div> 
+      </nav>
+      
+    <!-- *******************************************************   TIM KIEM   ************************************************************* -->
+
+    <div class="findmembers">
+        <label for="">Vùng:<br />
+            <select class="browser-default custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </label>
+        <label for="">Tỉnh:<br />
+            <select class="browser-default custom-select">
+                <option selected>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </label>
+        <label for="">Mã NV:<br /><input type="text" name="" placeholder="Team"></label>
+        <input type="submit" value="Tìm">
+    </div>
+
+    <!-- ***************************************************   DANH SÁCH NHÂN VIÊN   ********************************************************** -->
+    <div class="members">
+        <div class="members-title">DANH SÁCH NHÂN VIÊN</div>
+        <table class="table table-bordered listmembers">
+            <thead>
+                <tr>
+                    <th scope="col">Vùng</th>
+                    <th scope="col">Mã NV</th>
+                    <th scope="col">Tên NV</th>
+                    <th scope="col">Trạng Thái</th>
+                    <th scope="col">Khẩn Cấp</th>
+                    <th scope="col">Hình Ảnh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Đồng Nai</td>
+                    <td>ĐNA_SUP2</td>
+                    <td>NGUYỄN THANH HOA</td>
+                    <td>
+                        <p>BÌNH THƯỜNG</p>
+                    </td>
+                    <td></td>
+                    <td><img src="./img/ra.png" alt=""></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
