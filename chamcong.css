@@ -159,7 +159,6 @@ input:focus, textarea{
         margin:30px;
         background-color: white;
         position: relative;
-        height: 300px;
         border: 2px solid white;
     }
     .timekeeping-title{
@@ -211,6 +210,23 @@ input:focus, textarea{
     #customers img {
         height: 100px;
     }
+    #customers .warning-red span{
+        color:red;
+    }
+    #customers .warning-green span{
+        color:green;
+    }
+    #customers .warning-red img{
+        height: 50px;
+    }
+    #customers .warning-green img{
+        height: 50px;
+        display: none;
+    }
+    #customers .warning-green{
+        line-height: 35px;
+    }
+ 
     .button {
     background-color: #085805; /* Green */
     border: none;
