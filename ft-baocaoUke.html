@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='ft-danhsachdenghi.css' />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+
+<!-- *******************************************************   MENU   ************************************************************* -->
+
+<nav class="menu navbar navbar-expand-sm navbar-dark">
+  <div class="menu-logo">
+      <img src="./img/Logo-HNK-VN.png" alt="">
+  </div>
+  <ul class="navbar-nav menu-list">
+    <li class="nav-item">
+      <a class="nav-link" href="#">TRANG CHỦ</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          BÁO CÁO
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">QUẢN LÝ NV</a>
+    </li>
+  </ul>
+
+  <div class="menu-user">
+      <p>TÊN TÀI KHOẢN</p>
+      <img src="./img/unnamed.png" alt="">
+  </div>
+</nav>
+
+
+ <!-- *******************************************************   TIM KIEM   ************************************************************* -->
+
+ <div class="suggestfind">
+    <label for="">Ngày:<br/> <input type="date" name=""></label>
+    <label for="">Vùng:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Siêu Thị:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Trạng Thái:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <input type="submit" value="Tìm">
+</div>
+
+<!-- ***************************************************   BÁO CÁO Ụ KỆ   ********************************************************** -->
+<div class="suggest">
+    <div class="suggest-title">BÁO CÁO Ụ KỆ</div>
+    <div style="overflow-x:auto;">
+    <table class="table table-bordered listsuggest">
+        <thead>
+          <tr>
+            <th scope="col" rowspan="2">Vùng</th>
+            <th scope="col" rowspan="2">Ngày</th>
+            <th scope="col" rowspan="2">Siêu Thị</th>
+            <th scope="col" rowspan="2">Nhà Máy Bia</th>
+            <th scope="col" rowspan="2">Nhãn Hàng</th>
+            <th scope="col" colspan="1">Ngoài Siêu Thị</th>
+            <th scope="col" colspan="2">Trong Siêu Thị</th>
+          </tr>
+          <tr>
+            <th scope="col">Cột</th>
+            <th scope="col">Cột</th>
+            <th scope="col">Pallet</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HCM</td>
+            <td style="color:red">08:58 28/08/2020</td>
+            <td>BigC Thảo Điền</td>
+            <td>HVBL</td>
+            <td>Heineken</td>
+            <td>2</td>
+            <td>1</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
