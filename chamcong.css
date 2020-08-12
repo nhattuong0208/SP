@@ -219,6 +219,10 @@ input:focus, textarea{
     #customers .warning-red img{
         height: 50px;
     }
+    #customers .warning-green img{
+        height: 50px;
+        display: none;
+    }
     #customers .warning-green{
         line-height: 35px;
     }
