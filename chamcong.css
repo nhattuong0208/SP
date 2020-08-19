@@ -187,46 +187,57 @@ input:focus, textarea{
     }
 
 
-    #customers {
+    #example {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width:100%;
     margin: 55px 0px;
     }
-    #customers td, #customers th {
+    #example td, #example th {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
     }
-    #customers tr:nth-child(even){background-color: #f2f2f2;}
-    #customers tr:hover {background-color: #ddd;}
-    #customers th {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    #example tr:nth-child(even){background-color: #f2f2f2;}
+    #example tr:hover {background-color: #ddd;}
+    #example th {
+    padding-top: 13px!important;
+    padding-bottom: 13px!important;
     text-align: center;
     background-color: #085805;
     color: white;
     }
-    #customers img {
-        height: 100px;
+    #example td{
+        height: 50px!important;
     }
-    #customers .warning-red span{
+    #example img {
+        height: 80px;
+    }
+    #example .warning-red span{
         color:red;
     }
-    #customers .warning-green span{
+    #example .warning-green span{
         color:green;
     }
-    #customers .warning-red img{
+    #example .warning-red img{
         height: 30px;
     }
-    #customers .warning-green img{
+    #example .warning-green img{
         height: 30px;
         display: none;
     }
-    #customers .warning-green{
+    #example .warning-green{
         line-height: 35px;
     }
- 
+    #example_filter{
+        display: none;
+    }
+    #example_wrapper{
+        margin-top:23px;
+    }
+    #example td{
+        background-color: rgb(231, 231, 231)!important;
+    }
     .button {
     background-color: #085805; /* Green */
     border: none;
@@ -256,4 +267,41 @@ input:focus, textarea{
     .listoutlet div{
         flex-grow: 8;
         padding-left: 70%;
+    }
+    
+    table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+        left:85pc!important;
+    }
+    .example-open{
+        border-right:none!important;
+        width:1px;
+    }
+    .example-kenh{
+        border-left:none!important;
+    }
+    .dtr-data div{
+        height: 85px!important;
+        line-height: 85px!important;
+    }
+    .dtr-details{
+        display: flex!important;
+        background-color: white!important;
+    }
+    table.dataTable>tbody>tr.child ul.dtr-details>li {
+        padding:0!important;
+    }
+    .dtr-details li{
+        width:275px!important;
+        background-color: white!important;
+    }
+    #example td, #example th {
+        border: 1px solid white;
+        padding: 0px;
+        text-align: center;
+    }
+    table.dataTable>tbody>tr.child ul.dtr-details>li {
+        border-bottom: none!important;
+    }
+    table.dataTable>tbody>tr.child ul.dtr-details {
+        padding: 10px 0px!important;
     }
