@@ -121,10 +121,18 @@ input:focus, textarea{
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #fcf6f6;
-    height: 30px;
+    height: 40px;
     margin-right: 30px;
   }
+  .find select{
+    width:300px;
+    margin: 4px 0;
+    height: 40px;
+    margin-right: 60px;
+    margin-top:0;
+}
 .find input[type=date] {
+    height: 40px;
     padding:2px;
     width:300px;
     margin: 4px 0;
@@ -133,10 +141,11 @@ input:focus, textarea{
     border-radius: 4px;
     box-sizing: border-box;
     background-color: #fcf6f6;
-    margin-right: 30px;
+    margin-right: 60px;
   }
   
 .find input[type=submit] {
+    height: 40px;
     width: 200px;
     background-color: #DA1930;
     border-radius: 4px;
@@ -152,7 +161,19 @@ input:focus, textarea{
 .find input[type=submit]:hover {
     background-color: #ff4d4d;
   }
-
+  table.dataTable.dtr-column>tbody>tr td.control:before {
+    font-family: "Font Awesome 5 Free"!important;
+    font-weight: 900;
+    content: "\f078"!important;
+}
+  table.dataTable.dtr-column>tbody>tr.parent td.control:before, table.dataTable.dtr-column>tbody>tr.parent th.control:before {
+    font-family: "Font Awesome 5 Free"!important;
+    font-weight: 900;
+    content: "\f077"!important;
+}
+table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before {
+    line-height: 17px!important;
+}
 
     /* ****************************************************   DANH SÁCH CHẤM CÔNG   *********************************************************** */
     .timekeeping{
@@ -177,6 +198,11 @@ input:focus, textarea{
         margin: 10px 0px;
         position: absolute;
         left: 90%;
+    }
+    @media only screen and (max-width: 1650px) {
+        .timekeeping-exportfile div{
+            left: 88%;
+        }
     }
     .timekeeping a{
         color: #085805;
@@ -270,7 +296,42 @@ input:focus, textarea{
     }
     
     table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
-        left:85pc!important;
+        left:105pc!important;
+    }
+    @media only screen and (max-width: 1780px) {
+        table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+            left:100pc!important;
+        }
+    }
+    @media only screen and (max-width: 1700px) {
+        table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+            left:95pc!important;
+        }
+    }
+    @media only screen and (max-width: 1620px) {
+        table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+            left:90pc!important;
+        }
+    }
+    @media only screen and (max-width: 1540px) {
+        table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+            left:85pc!important;
+        }
+    }
+    @media only screen and (max-width: 1460px) {
+        table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+            left:80pc!important;
+        }
+    }
+    @media only screen and (max-width: 1380px) {
+        table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+            left:75pc!important;
+        }
+    }
+    @media only screen and (max-width: 1220px) {
+        table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-column>tbody>tr>th.control:before{
+            left:65pc!important;
+        }
     }
     .example-open{
         border-right:none!important;

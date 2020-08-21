@@ -16,8 +16,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
-
-
+  <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
 </head>
 
 <body>
@@ -89,8 +88,54 @@
   <div class="find">
     <label for="">Ngày Bắt Đầu:<br /> <input type="date" name=""></label>
     <label for="">Ngày Kết Thúc:<br /> <input type="date" name=""></label>
-    <label for="">Vùng:<br /> <input type="text" name="" placeholder="Vùng"></label>
-    <label for="">Team:<br /> <input type="text" name="" placeholder="Team"></label>
+    <label for="">Khu Vực:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Team:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Tỉnh:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Kênh:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Siêu Thị:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Ca Làm Việc:<br/>
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
     <input type="submit" value="Tìm">
   </div>
 
@@ -105,7 +150,7 @@
         </a>
       </div>
     </div>
-    
+    <div style="overflow-x:auto;">
     <table id="example" class="display nowrap" style="width:100%">
       <thead>
         <tr>
@@ -190,6 +235,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 
 
