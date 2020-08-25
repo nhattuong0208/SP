@@ -126,7 +126,7 @@
             <td class="yellow">5</td>
             <td>62</td>
             <td class="red">0</td>
-            <td>84</td>
+            <td class="update">84</td>
             <td>95</td>
             <td>106</td>
             <td>112</td>
@@ -135,7 +135,7 @@
             <td>112</td>
             <td>Ụ kệ</td>
             <td>
-              <div><a href="" data-toggle="modal" data-target="#myModal">Update</a></div>
+              <div><a href="" data-toggle="modal" data-target="#stock-chitiet" style="font-size: 15px;">Chi Tiết</a></div>
             </td>
           </tr>
           <tr>
@@ -143,19 +143,19 @@
             <td>28/08/2020</td>
             <td>BigC Thảo Điền</td>
             <td>HCMC</td>
-            <td class="grey">5</td>
-            <td class="grey">62</td>
-            <td class="grey">0</td>
-            <td class="grey">84</td>
-            <td class="grey">95</td>
-            <td class="grey">106</td>
-            <td class="grey">112</td>
-            <td class="grey">95</td>
-            <td class="grey">106</td>
-            <td class="grey">112</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
+            <td class="grey">100</td>
             <td>Ụ kệ</td>
             <td>
-              <div><a href="" data-toggle="modal" data-target="#myModal">Update</a></div>
+              <div class="button-update"><a href="" data-toggle="modal" data-target="#stock-update">Update</a></div>
             </td>
           </tr>
         </tbody>
@@ -164,24 +164,24 @@
 </div>
 
   <!-- ****** CẬP NHẬT KHO ****** -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="stock-update" role="dialog">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Cập Nhật Kho</h4>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optradio">Chỉ đếm số lượng hàng hóa trong line, Ụ, kệ trưng bày
-              </label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="defaultChecked" name="defaultExampleRadios"
+                checked>
+              <label class="custom-control-label" for="defaultChecked">Chỉ đếm số lượng hàng hóa trong line, Ụ, kệ trưng bày</label>
             </div>
-            <div class="form-check">
-              <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="optradio">Số lượng đã bao gồm hàng hóa trong kho
-              </label>
+            <div class="custom-control custom-radio">
+              <input type="radio" class="custom-control-input" id="defaultUnchecked" name="defaultExampleRadios">
+              <label class="custom-control-label" for="defaultUnchecked">Số lượng đã bao gồm hàng hóa trong kho</label>
             </div>
-            <table class="table table-striped">
+            <div style="overflow-y:scroll; height: 364px;">
+            <table class="table table-striped" >
                 <thead>
                   <tr>
                     <th>Hình SP</th>
@@ -196,42 +196,187 @@
                     <td><img src="./img/heinikenG.png" alt=""></td>
                     <td>Sản phẩm 1</td>
                     <td>200</td>
-                    <td>46</td>
+                    <td>100</td>
                     <td><input type="text"></td>
                   </tr>
                   <tr>
                     <td><img src="./img/heinikenG.png" alt=""></td>
                     <td>Sản phẩm 2</td>
                     <td>200</td>
-                    <td>46</td>
+                    <td>100</td>
                     <td><input type="text"></td>
                   </tr>
                   <tr>
                     <td><img src="./img/heinikenG.png" alt=""></td>
                     <td>Sản phẩm 3</td>
                     <td>200</td>
-                    <td>46</td>
+                    <td>100</td>
                     <td><input type="text"></td>
                   </tr>
                   <tr>
                     <td><img src="./img/heinikenG.png" alt=""></td>
                     <td>Sản phẩm 4</td>
                     <td>200</td>
-                    <td>46</td>
+                    <td>100</td>
                     <td><input type="text"></td>
                   </tr>
                   <tr>
                     <td><img src="./img/heinikenG.png" alt=""></td>
                     <td>Sản phẩm 5</td>
                     <td>200</td>
-                    <td>46</td>
+                    <td>100</td>
+                    <td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./img/heinikenG.png" alt=""></td>
+                    <td>Sản phẩm 6</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./img/heinikenG.png" alt=""></td>
+                    <td>Sản phẩm 7</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./img/heinikenG.png" alt=""></td>
+                    <td>Sản phẩm 8</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./img/heinikenG.png" alt=""></td>
+                    <td>Sản phẩm 9</td>
+                    <td>200</td>
+                    <td>100</td>
+                    <td><input type="text"></td>
+                  </tr>
+                  <tr>
+                    <td><img src="./img/heinikenG.png" alt=""></td>
+                    <td>Sản phẩm 10</td>
+                    <td>200</td>
+                    <td>100</td>
                     <td><input type="text"></td>
                   </tr>
                 </tbody>
               </table>
+              </div>
               <button type="button" class="btn btn-outline-success">Update</button>
         </div>
     </div>
+</div>
+
+
+
+ <!-- ****** CHI TIẾT ****** -->
+ <div class="modal fade" id="stock-chitiet" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h4 class="modal-title">Cập Nhật Kho</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultChecked2" name="defaultExampleRadios2"
+              checked>
+            <label class="custom-control-label" for="defaultChecked2">Chỉ đếm số lượng hàng hóa trong line, Ụ, kệ trưng bày</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" class="custom-control-input" id="defaultUnchecked2" name="defaultExampleRadios2">
+            <label class="custom-control-label" for="defaultUnchecked2">Số lượng đã bao gồm hàng hóa trong kho</label>
+          </div>
+          <div style="overflow-y:scroll; height: 364px;">
+          <table class="table table-striped" >
+              <thead>
+                <tr>
+                  <th>Hình SP</th>
+                  <th>Tên SP</th>
+                  <th>Số Liệu Chuẩn</th>
+                  <th>Số Liệu Của SP</th>
+                  <th>Số Liệu Của Sale</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 1</td>
+                  <td>200</td>
+                  <td>5</td>
+                  <td>5</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 2</td>
+                  <td>200</td>
+                  <td>62</td>
+                  <td>62</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 3</td>
+                  <td>200</td>
+                  <td>0</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 4</td>
+                  <td>200</td>
+                  <td>100</td>
+                  <td class="update">84</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 5</td>
+                  <td>200</td>
+                  <td>95</td>
+                  <td>95</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 6</td>
+                  <td>200</td>
+                  <td>106</td>
+                  <td>106</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 7</td>
+                  <td>200</td>
+                  <td>112</td>
+                  <td>112</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 8</td>
+                  <td>200</td>
+                  <td>95</td>
+                  <td>95</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 9</td>
+                  <td>200</td>
+                  <td>106</td>
+                  <td>106</td>
+                </tr>
+                <tr>
+                  <td><img src="./img/heinikenG.png" alt=""></td>
+                  <td>Sản phẩm 10</td>
+                  <td>200</td>
+                  <td>112</td>
+                  <td>112</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+            <button type="button" class="btn btn-outline-success">Update</button>
+      </div>
+  </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

@@ -183,6 +183,9 @@ input:focus, textarea{
     background:#FFC400; 
     color:white;
 }
+.update{
+    color:#ff4747;
+}
 .stock-img img {
     height: auto;
     width: 100%;
@@ -212,16 +215,16 @@ input:focus, textarea{
 }
 
 
-.liststock td div{
+.liststock td .button-update{
     padding:3px 2px;
     border-radius: 3px;
     left: 90%;
     background-color: #085805;
 }
-.liststock td div a{
+.liststock td .button-update a{
     color:white;
 }
-.liststock td div:hover{
+.liststock td .button-update:hover{
     background-color:#2D8736;
 }
 .modal-dialog {
@@ -237,7 +240,7 @@ input:focus, textarea{
     color:white;
 }
 .modal-dialog img{
-    height: 40px;
+    height: 32px;
 }
 .modal-content{
     padding: 80px 20px 0px 20px;
