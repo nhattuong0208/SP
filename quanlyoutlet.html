@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel='stylesheet' type='text/css' href='quanlyoutlet.css' />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <!-- *******************************************************   MENU   ************************************************************* -->
+
+  <nav class="menu navbar navbar-expand-sm navbar-dark">
+    <div class="menu-logo">
+      <img src="./img/Logo-HNK-VN.png" alt="">
+    </div>
+    <ul class="navbar-nav menu-list">
+      <li class="nav-item">
+        <a class="nav-link" href="#">TRANG CHỦ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CHẤM CÔNG</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">THÔNG BÁO</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          BÁO CÁO
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          QUẢN TRỊ
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">QUẢN LÝ NV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">HOẠT ĐỘNG</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          QUẢN LÝ QUÀ
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">QUẢN LÝ OUTLET</a>
+      </li>
+    </ul>
+
+    <div class="menu-user">
+      <p>TÊN TÀI KHOẢN</p>
+      <img src="./img/unnamed.png" alt="">
+    </div>
+  </nav>
+
+  <!-- *******************************************************   TIM KIEM   ************************************************************* -->
+
+  <div class="outletfind">
+    <label for="">Siêu Thị:<br />
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <label for="">Team:<br />
+      <select class="browser-default custom-select">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </label>
+    <input type="submit" value="Tìm">
+  </div>
+
+  <!-- ***************************************************   DANH SÁCH OUTLET   ********************************************************** -->
+  <div class="outlet">
+    <div class="outlet-title">ĐỔI SET QUÀ</div>
+    <table class="table table-bordered listoutlet">
+      <thead>
+        <tr>
+          <th scope="col">Vùng</th>
+          <th scope="col">Siêu Thị</th>
+          <th scope="col">Địa Chỉ</th>
+          <th scope="col">Team</th>
+          <th scope="col">Số Lượng PG</th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HCM</td>
+          <td style="color:green">Big C Tiền Giang</td>
+          <td>83/41 Phạm Van Bạch, Tân Bình</td>
+          <td>Co.opmart Tuy Lý Vương ca1</td>
+          <td>4</td>
+          <td>
+            <button type="button" data-toggle="modal" data-target="#outletsp"
+              class="btn btn-outline-success">Update</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- ***************************   UPDATE SP   *************************** -->
+  <div class="outlet-sp modal fade" id="outletsp" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Số Lượng PG</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="sp-add">
+        </div>
+        <div class="sp-info">
+          <p>Siêu Thị: <span style="margin-left:45px">Big C Tiền Giang</span></p>
+          <p>Tên Team: <span style="margin-left:35px">Co.opmart Tuy Lý Vương ca1</span></p>
+          <p>Số Lượng PG: <input style="margin-left:10px" type="text"> <button type="button"
+              class="btn btn-success">Update</button> </p>
+        </div>
+        <div class="sp-table">
+          <p>Lịch Sử</p>
+          <div style="overflow-y:auto; max-height: 300px;">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Thời Gian</th>
+                  <th>Người Sửa</th>
+                  <th>Số Lượng PG</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08:30 20/20/2020</td>
+                  <td>Nguyễn Văn A</td>
+                  <td>4</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
