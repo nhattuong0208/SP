@@ -190,14 +190,19 @@ table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-colum
         padding: 10px ;
         background-color: #085805;
     }
+    .timekeeping-exportfile{
+        display: flex;
+        justify-content: flex-end;
+    }
     .timekeeping-exportfile div{
         border: 2px solid #085805;
         border-radius: 3px;
         width: 130px;
         padding:3px 5px;
-        margin: 10px 0px;
-        position: absolute;
-        left: 90%;
+      
+    }
+    .timekeeping-exportfile div,.timekeeping-exportfile button,.timekeeping-exportfile input{
+        margin: 10px 10px 10px 0px;
     }
     @media only screen and (max-width: 1650px) {
         .timekeeping-exportfile div{
@@ -257,9 +262,6 @@ table.dataTable.dtr-column>tbody>tr>td.control:before, table.dataTable.dtr-colum
     }
     #example_filter{
         display: none;
-    }
-    #example_wrapper{
-        margin-top:23px;
     }
     #example td{
         background-color: rgb(231, 231, 231)!important;
