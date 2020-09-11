@@ -61,6 +61,14 @@ input:focus, textarea{
 .dropdown-item{
     font-size: 20px!important;
 }
+.menu .dropdown-menu{
+    border:none;
+    padding:5px 0;
+}
+.menu .dropdown-menu a:hover{
+    color:#2D8736;
+    background-color: rgb(226, 226, 226);
+}
 @media only screen and (max-width: 1650px) {
     .menu{
         width: 100%;
