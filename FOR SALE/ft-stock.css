@@ -55,7 +55,7 @@ input:focus, textarea{
 }
 .menu-user p{
     line-height: 60px;
-    margin-right:5px ;
+    margin-right:5px;
     font-size: 20px;
 }
 .dropdown-item{
@@ -69,6 +69,7 @@ input:focus, textarea{
     color:#2D8736;
     background-color: rgb(226, 226, 226);
 }
+
 @media only screen and (max-width: 1650px) {
     .menu{
         width: 100%;

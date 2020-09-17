@@ -1,0 +1,674 @@
+@font-face {
+  font-family: HelveticaNeue;
+  src: url("../font/OTF/HelveticaNeue.otf");
+}
+
+@font-face {
+    font-family: HelveticaNeue-Bold;
+    src: url("../font/OTF/HelveticaNeue-Bold.otf");
+  }
+
+body{
+    font-family: HelveticaNeue !important;
+    font-size: 0.9rem;
+}
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: unset!important;
+}
+input,textarea{
+    outline: none!important;
+}
+.content-header *{
+    font-family: HelveticaNeue !important;
+}
+.main-header{
+    border-bottom: none;
+}
+.elevation-4{
+    box-shadow: none !important;
+}
+.card-body tr th{
+    font-family: HelveticaNeue-Bold;
+}
+.card-header{
+    border-bottom: 1px solid rgb(148 148 148 / 13%);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    color: #fff;
+    background-color: #1a8201;
+}
+.card{
+    border-radius: 0;
+    box-shadow: 0 0 0 #FFF;
+}
+.table-bordered{
+    border-bottom: 1px solid rgb(148 148 148 / 13%);
+}
+.table thead th{
+    border-bottom: 1px solid rgb(148 148 148 / 13%);
+}
+.pagination-sm .page-item:first-child .page-link{
+    border-radius: 0;
+}
+.page-item:first-child .page-link{
+    border-radius: 0;
+}
+.pagination-sm .page-item:last-child .page-link{
+    border-radius: 0;
+}
+.page-item:last-child .page-link{
+    border-radius: 0;
+}
+.page-link{
+    color: #000;
+}
+.page-link:focus{
+    box-shadow: none;
+}
+.pagination-sm .page-link{
+    padding: .25rem .65rem;
+}
+.pagination-sm .page-item .page-link{
+    margin-right: 3px;
+}
+.pagination-sm .page-item:last-child .page-link{
+    margin-right: 0;
+}
+.page-link:hover{
+    color: #000;
+}
+.content-wrapper {
+    background: #dadada;
+}
+/* *****************************************************     Tuong-Style     ****************************************** */
+
+/* ***********************   MENU   ********************** */
+.menu-logo img{
+    margin:0px 20px;
+    margin-top: 5px;
+    height: 45px;
+    padding-bottom: 5px ;
+}
+.menu-user{
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.menu-user img{
+    height: 30px;
+    margin-top: 6px;
+}
+.menu-user p,.menu-user a{
+    line-height: 42px;
+    margin-right:5px ;
+    font-size: 15px;
+    color:white;
+}
+.menu-user a:hover{
+    color:#ffffffbf;
+}
+.navbar-primary {
+    background-color: #058400;
+}
+.navbar{
+    padding:2px;
+}
+/* ***********************   TÌM KIẾM   ********************** */
+.find{
+    padding: 25px 40px 10px 30px;
+    background-color: none;
+    border-bottom: 1px solid whitesmoke;
+    position: relative;
+}
+.find label{
+    font-weight: unset!important;
+}
+.find h3{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.find .row{
+    width:40%;
+}
+.find input[type=date] {
+    padding:4px;
+    width:250px;
+    height: 37px;
+    margin: 4px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 0;
+    outline: none;
+    border-radius:4px;
+}
+.find-button img{
+    height: 22px;
+}
+.find-button button{
+    width:120px;
+    margin-left: 5px;
+}
+.find-button{
+    display: flex;
+    position: absolute;
+    top: 112px;
+    right: 30px;
+}
+/* ***********************   TABLE   ********************** */
+.card-body th{
+    background-color: #085805;
+    color: white;
+    text-align: center;
+}
+.card-body td{
+    text-align: center;
+    border: 1px solid white; 
+    background-color: #ececec;    
+}
+.card-body td img {
+    height:50px;
+    margin-bottom: 2px;
+}
+.card-body td button{
+    font-size: 13px;
+    border-radius: 0;
+    margin-bottom: 3px;
+    margin: 3px 0px 5px 0px;
+}
+.plan td{  
+    padding:0px;
+    line-height: 50px;
+}
+.plan-save{
+    width: 180px;
+    background-color: #085805;
+    margin-top:20px;
+    border-radius: 0;
+    margin-left: 48%;
+}
+.red{
+    color:red;
+}
+.green{
+    color:green;
+}
+.orange{
+    color:orange;
+}
+
+
+/* ***************************     Popup    ***************************** */
+.close{
+    font-size: 28px;
+    padding: 12px!important;
+    color: white;
+    opacity: 1;
+    font-weight: 100;
+}
+.modal-header h4{
+    padding-left: 10px;
+    font-size: 20px;
+}
+.modal-title {
+    line-height: 1;
+}
+.modal-header button{
+    outline: none!important;
+}
+.modal-header{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    background-color: green;
+    color:white;
+}
+.modal-content{
+    padding: 70px 20px 0px 20px;
+    position: relative;
+    display: block!important;
+    border:none;
+}
+.modal-header .close, .modal-header .mailbox-attachment-close {
+    margin: -20px -37px -30px auto!important;
+}
+/* *************************************  Thêm brand  ******************************************* */
+.addbrand .modal-dialog{
+    max-width: 735px!important;
+}
+.addbrand .modal-dialog td{
+    padding:5px 0px!important;
+    text-align: center;
+}
+.addbrand .modal-dialog th{
+    text-align: center;
+    background-color: #2D8736;
+    color:white;
+}
+.addbrand .modal-dialog img{
+    height: 40px;
+}
+.addbrand .modal-content .brand-label{
+    width: 100%;
+    text-align: center;
+}
+.addbrand .modal-content .brand-label input{
+    width: 350px;
+}
+.addbrand .modal-content span{
+    margin-left: 48px;
+}
+.addbrand .modal-content textarea{
+    margin-left: 121px;
+    margin-top: 9px;
+    width: 540px;
+}
+.addbrand .modal-content p{
+    position:absolute;
+    top:260px;
+    left:78px;
+}
+.addbrand .brand-addsku{
+    margin-top: 20px;
+    text-align: center;
+}
+.addbrand .brand-addsku label{
+    padding-left: 0!important;
+}
+.addbrand .brand-addsku input{
+    width: 165px;
+    border: 1px solid #2D8736;
+}
+.addbrand input{
+    outline: none;
+}
+.addbrand .brand-addsku i{
+    color: red;
+    margin-left: 5px;
+}
+.addbrand .brand-addsku i:hover{
+    color: rgb(168, 0, 0);
+    font-size: 20px;
+}
+.addbrand .brand-addsku a{
+    color:#085805;
+    text-decoration-line: underline; 
+}
+.addbrand .brand-addsku a:hover{
+    opacity: 0.5;
+}
+.addbrand button{
+    width:100px;
+    margin-left: 84%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.addbrand table{
+    margin-top: 8px;
+}
+
+/* ************************************* Thêm sku  ******************************************* */
+.plan-addsku .modal-dialog {
+    max-width: 725px!important;
+}
+.plan-addsku input{
+    width:200px;
+}
+.plan-addsku .modal-content label{
+    width: 350px;
+    text-align: center;
+}
+.plan-addsku .modal-content span{
+    margin-left: 56px;
+}
+.plan-addsku .modal-content textarea{
+    margin-left: 123px;
+    margin-top: 9px;
+    width: 540px;
+}
+.plan-addsku .modal-content p{
+    position:absolute;
+    top:212px;
+    left:82px;
+}
+.plan-addsku button{
+    width:100px;
+    margin-left: 82%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.plan-addsku .close{
+    color: white;
+    opacity: 1;
+}
+.plan-addsku .modal-header h4{
+    padding-left: 10px;
+}
+.form-group {
+    margin-bottom: 0!important;
+}
+
+/* ************************************* Thêm Sku (phân bổ) ******************************************* */
+.distribution-sku .modal-dialog {
+    max-width: 1200px!important;
+}
+
+.distribution-sku button{
+    width:100px;
+    margin-left: 46%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.distribution-sku .modal-header button{
+    outline: none!important;
+}
+.distribution-sku .modal-header h4{
+    padding-left: 10px;
+}
+.distribution-sku .modal-content legend{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.distribution-sku .modal-content fieldset p{
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+.distribution-sku .modal-content fieldset{
+    position: relative;
+    width:550px;
+    margin-left: 20px;
+}
+.distribution-sku .modal-content .information img{
+    position: absolute;
+    height: 140px;
+    top: 55px;
+    left: 330px;
+}
+.distribution-information{
+    display: flex;
+}
+.information legend{
+    width: 170px;
+}
+.warehouse legend{
+    width: 107px;
+}
+.choosewarehouse{
+    display: flex;
+}
+.choosewarehouse div{
+    margin-left:28px;
+}
+.distribution-information select{
+    margin-left: 150px;
+    margin-top: 3px;
+    font-size: 13px;
+    width: 365px;
+}
+.release{
+    margin-left: 150px;
+    margin-top: 5px;
+    width: 366px;
+    display: flex;
+    line-height: 35px;
+}
+.release input{
+    font-size: 13px;
+    width: 253px;
+    margin-left: 10px;
+}
+.warehouse-knh{
+    display: flex;
+}
+.warehouse-knh select{
+    margin-left:24px
+}
+.warehouse-knh p{
+    line-height: 40px;
+}
+.warehouse button{
+    margin-left: 416px;
+    margin-top:4px;
+    background-color: green;
+    border-radius:0;
+}
+.release{
+    margin-bottom: 2px;
+}
+.information p{
+    margin-bottom: 10px!important;
+}
+.warehouse-table{
+    margin:20px;
+}
+.warehouse-table th{
+    background-color: green;
+    color:white;
+    text-align: center;
+    border-right:1px solid white;
+}
+.warehouse-table td{
+    text-align: center;
+}
+#warehouse-out{
+    display: none;
+}
+#warehouse-out input{
+    margin-left: 150px;
+    margin-top: 3px;
+    font-size: 13px;
+    width: 366px;
+}
+.warehouse-table p{
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size:18px;
+}
+
+/* ************************************* thông báo ******************************************* */
+
+.listnotifi{
+    margin-top: 1px;
+}
+.listnotifi th{
+    background-color: #085805;
+    color: white;
+    text-align: center;
+}
+.listnotifi td{
+    text-align: center;
+    padding: 0!important;
+    line-height: 50px;
+    background-color: #eCeCeC;
+}
+.listnotifi .seen td{
+    background-color: white;
+}
+.listnotifi td div{
+    padding:3px 2px;
+    border-radius: 3px;
+    left: 90%;
+    background-color: #085805;
+}
+.listnotifi button{
+    width: 100px;
+    border-radius: 0;
+    font-size: 12px;
+    padding: 5px;
+}
+
+/* *************************************  điều chuyển  ******************************************* */
+
+.transfer-sku .modal-dialog {
+    max-width: 900px!important;
+}
+.transfer-sku button{
+    width:100px;
+    margin-left: 46%;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.transfer-sku .modal-header button{
+    outline: none!important;
+}
+.transfer-sku .modal-content legend{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.transfer-sku .modal-content fieldset{
+    position: relative;
+    width:820px;
+    margin-left: 20px;
+}
+.information legend{
+    width: 170px;
+}
+.transfer-sku legend{
+    width: 107px;
+}
+.transfer-add select{
+    font-size: 13px;
+}
+.relse{
+    margin-left: 65px;
+    margin-top: 5px;
+    width: 695px;
+    display: flex;
+}
+.relse p{
+    width:147px;
+}
+.relse input{
+    font-size: 13px;
+    width: 576px;
+    margin-left: 7px;
+}
+.transferwarehouse{
+    padding-top:10px;
+}
+.transferwarehouse button{
+    margin-left: 660px;
+    margin-top:-4px;
+    background-color: green;
+    border-radius:0;
+}
+.relse{
+    margin-bottom: 2px;
+}
+.information p{
+    margin-bottom: 10px!important;
+}
+.transfer-table{
+    margin:20px;
+}
+.transfer-table th{
+    background-color: green;
+    color:white;
+    text-align: center;
+    border-right:1px solid white;
+}
+.transfer-table td{
+    text-align: center;
+}
+.transfer-table p{
+    font-weight: bold;
+    margin-bottom: 3px;
+    font-size:18px;
+}
+
+/* ************************************* Thêm kho (danh mục)  ******************************************* */
+.warehouse-add .modal-dialog {
+    max-width: 478px!important;
+}
+.warehouse-add .warehouse-addbutton{
+    width: 99px;
+    margin-left: 77%;
+    margin-bottom: 10px;
+    margin-top: -3px;
+    border-radius: 0;
+    background-color: #008000;
+}
+.warehouse-add .modal-header .close{
+    margin: -19px -10px -30px auto!important;
+}
+.warehouse-add .warehouse-addbutton:hover{
+    opacity: 0.5;
+}
+.warehouse-add .modal-header button{
+    outline: none!important; 
+}
+.warehouse-add .modal-content legend{
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding-left: 10px;
+}
+.warehouse-add .modal-content fieldset{
+    position: relative;
+    width:1115px;
+    margin-left: 20px;
+}
+.warehouse-add legend{
+    width: 107px;
+}
+.transfer-add select{
+    font-size: 13px;
+}
+.wh-rs{
+    margin-top: 5px;
+    display: flex;
+}
+.wh-rs p{
+    width:80px;
+}
+.wh-rs input{
+    font-size: 13px;
+    width: 350px;
+    margin-left: 5px;
+}
+.wh-rs{
+    margin-bottom: 2px;
+}
+.wh-rs input{
+    margin-top:-6px;
+}
+
+/* ************************************* Yêu Cầu Trả Hàng  ******************************************* */
+.listcheckbox{
+    margin-bottom:-10px;
+}
+
+/* ************************************* Tạo Yêu Cầu Trả Hàng  ******************************************* */
+#province{
+    display: none;
+    width: 300px;
+    font-size: 15px;
+    height: 35px;
+    margin-top: -7px;
+    margin-left: 10px;
+}
+/* ************************************* Chi Tiết Trả Hàng  ******************************************* */
+.return-gifts td{
+    background-color: white;
+}
+.return-gifts thead{
+    border:2px solid #085805;
+}
+.return-gifts tbody{
+    border: 2px solid #dee2e6;
+}
+/* ************************************* Chi Tiết Phiếu Nhập/Xuất (Trả Hàng)  ******************************************* */
+#returngifts-ctpn .modal-dialog {
+    max-width: 1000px!important;
+}
+#returngifts-ctpn .modal-content,#returngifts-ctpx .modal-content {
+    padding: 45px 20px 0px 20px;
+}
+#returngifts-ctpx .modal-dialog {
+    max-width: 800px!important;
+}

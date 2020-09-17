@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Danh Mục</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="../thong-assets/css/style.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <!-- ****************************   MENU   ******************************* -->
+    <div class="row" style="margin-right:0px; background:#1a8201">
+      <div class="col col-md">
+        <nav class="navbar navbar-expand navbar-primary navbar-dark">
+          <div class="menu-logo">
+            <img src="../thong-assets/img/heineken-open-your-world-logo-black-and-white.png" alt="">
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Danh Sách SKU</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Lập Kế Hoạch Kho</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Phân Bổ Hàng</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Thông Báo</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Điều Chuyển</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Danh Mục</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Yêu Cầu Trả Hàng</a>
+            </li>
+          </ul>
+          <div class="menu-user">
+            <p>Tên Tài Khoản</p>
+            <p style="padding:0 5px">|</p><a href="#">Đăng Xuất</a>
+            <img src="../thong-assets/img/notification.png" alt="">
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ****************************   TIM KIEM   ******************************* -->
+    <div class="find">
+      <h3>Danh Sách Kho</h3>
+      <label for="">Tên Kho:<br />
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </label>
+      <div class="find-button">
+        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#warehouseadd"
+          type="button">+
+          Thêm</button>
+      </div>
+    </div>
+
+    <!-- **************************   danh sách kho   ******************************* -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th style="width: 10px">STT</th>
+                    <th>Tên Kho</th>
+                    <th>Thủ Kho</th>
+                    <th>SĐT</th>
+                    <th>Diện Tích</th>
+                    <th>Hạng Mức Max</th>
+                    <th>Hạng Mức Min</th>
+                    <th>Địa Chỉ</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>kho tỉnh 1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>0123456789</td>
+                    <td>1000m2</td>
+                    <td>5000</td>
+                    <td>1000</td>
+                    <td>83/41 Phạm Văn Bạch</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer clearfix">
+              <ul class="pagination pagination-sm m-0 float-right">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ***************************   Thêm kho   *************************** -->
+      <div class="warehouse-add modal fade" id="warehouseadd" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Thêm Kho</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div>
+              <div class="wh-rs">
+                <p>Tên Kho:</p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="wh-rs">
+                <p>Thủ Kho:</p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="wh-rs">
+                <p>SĐT:</p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="wh-rs">
+                <p>Diện Tích:</p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="wh-rs">
+                <p>Địa Chỉ:</p>
+                <input type="text" class="form-control">
+              </div>
+              <div class="wh-rs">
+                <p>Hạn Mức:</p>
+                <input style="width:173px" type="text" class="form-control" placeholder="Max">
+                <input style="width:173px" type="text" class="form-control" placeholder="Min">
+              </div>
+            </div>
+            <button type="button" class="warehouse-addbutton btn btn-secondary">Thêm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../dist/js/demo.js"></script>
+</body>
+
+</html>

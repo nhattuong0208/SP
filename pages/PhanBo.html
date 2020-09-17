@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Phân Bổ</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="../thong-assets/css/style.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <!-- ****************************   MENU   ******************************* -->
+    <div class="row" style="margin-right:0px; background:#1a8201">
+      <div class="col col-md">
+        <nav class="navbar navbar-expand navbar-primary navbar-dark">
+          <div class="menu-logo">
+            <img src="../thong-assets/img/heineken-open-your-world-logo-black-and-white.png" alt="">
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Danh Sách SKU</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Lập Kế Hoạch Kho</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Phân Bổ Hàng</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Thông Báo</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Điều Chuyển</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Danh Mục</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Yêu Cầu Trả Hàng</a>
+            </li>
+          </ul>
+          <div class="menu-user">
+            <p>Tên Tài Khoản</p>
+            <p style="padding:0 5px">|</p><a href="#">Đăng Xuất</a>
+            <img src="../thong-assets/img/notification.png" alt="">
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ****************************   TIM KIEM   ******************************* -->
+    <div class="find">
+      <h3>Phân Bổ Hàng</h3>
+      <p> Đơn Vị Thực Hiện: ĐV1</p>
+      <label for="">Thời Gian Bắt Đầu: <input type="date" name=""></label>
+      <label style="padding-left:20px" for="">Thời Gian Kết Thúc: <input type="date" name=""></label>
+    </div>
+
+    <!-- ****************************   PHÂN BỔ   ******************************* -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h6><b>Danh Sách Hạng Mục</b></h6>
+              <table class="table table-bordered plan">
+                <thead>
+                  <tr>
+                    <th style="width: 10px">STT</th>
+                    <th>SKU</th>
+                    <th>Số Lượng</th>
+                    <th>Số Lượng Đã Phân Bổ</th>
+                    <th>Đơn Vị</th>
+                    <th>Thời Gian Nhận</th>
+                    <th>Thời Gian Lần Phân Bổ Cuối</th>
+                    <th>Giai Đoạn</th>
+                    <th>Hình Ảnh</th>
+                    <th>Ghi Chú</th>
+                    <th>Trạng Thái</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>sku1</td>
+                    <td>500</td>
+                    <td>500</td>
+                    <td>Chai</td>
+                    <td>20/08/2020</td>
+                    <td class="red">20/08/2020 08:58</td>
+                    <td>1</td>
+                    <td>
+                      <img src="../thong-assets/img/bia-heineken-lon-cao-ksf_i1_2018122.png" alt="">
+                    </td>
+                    <td></td>
+                    <td class="green">Hoàn Thành</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>sku1</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>Chai</td>
+                    <td>20/08/2020</td>
+                    <td class="red">20/08/2020 08:58</td>
+                    <td>1</td>
+                    <td>
+                      <img src="../thong-assets/img/heinikenG.png" alt="">
+                    </td>
+                    <td></td>
+                    <td class="orange">Đang Tiến Hành</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#distributionsku">Phân Bổ</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>sku1</td>
+                    <td>500</td>
+                    <td>200</td>
+                    <td>Chai</td>
+                    <td>20/08/2020</td>
+                    <td class="red">20/08/2020 08:58</td>
+                    <td>1</td>
+                    <td>
+                      <img src="../thong-assets/img/heinikenG.png" alt="">
+                    </td>
+                    <td></td>
+                    <td class="orange">Đang Tiến Hành</td>
+                    <td>
+                      <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                        data-target="#distributionsku">Phân Bổ</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer clearfix" style="background-color:white">
+              <ul class="pagination pagination-sm m-0 float-right">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <h6><b>Danh Sách Kế Hoạch Phân Bổ</b></h6>
+              <table class="table table-bordered plan">
+                <thead>
+                  <tr>
+                    <th style="width: 10px">STT</th>
+                    <th>Kho Nhận</th>
+                    <th>Kho Xuất</th>
+                    <th>SKU</th>
+                    <th>Giai Đoạn</th>
+                    <th>Số Lượng Phân Bổ</th>
+                    <th>Đơn Vị</th>
+                    <th>Hình Ảnh</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>kho nhận 1</td>
+                    <td>kho xuất 1</td>
+                    <td>sku1</td>
+                    <td>1</td>
+                    <td>300</td>
+                    <td>Chai</td>
+                    <td>
+                      <img src="../thong-assets/img/bia-heineken-lon-cao-ksf_i1_2018122.png" alt="">
+                    </td>
+                    <td>
+                      <button type="button" class="btn btn-outline-success" data-toggle="modal"
+                      data-target="#distributionsku" style="color:orange;border:1px solid orange">Sửa</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="card-footer clearfix" style="background-color:white">
+              <ul class="pagination pagination-sm m-0 float-right">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+              </ul>
+            </div>
+            <button type="button" class="plan-save btn btn-success">Phân Bổ Thành Lệnh</button>
+          </div>
+        </div>
+      </div>
+      <!-- ***************************   THÊM SKU   *************************** -->
+      <div class="distribution-sku modal fade" id="distributionsku" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Cập Nhật Kho</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="distribution-information">
+              <fieldset class="information" style="border:1px solid black">
+                <legend>Thông Tin Chung</legend>
+                <p>Đơn Vị Thực Hiện: tên đơn vị thực hiện</p>
+                <p>SKU: sku1</p>
+                <p>Thời Gian Nhận: 20/08/2020</p>
+                <p>Số Lượng Cần Phân Bổ: 200</p>
+                <p>Giai Đoạn: 1</p>
+                <img src="../thong-assets/img/heinikenG.png" alt="">
+              </fieldset>
+
+              <fieldset class="warehouse" style="border:1px solid black">
+                <legend>Thêm Kho</legend>
+                <div class="warehouse-kxh">
+                  <div class="choosewarehouse">
+                    <p>Kho Xuất Hàng: </p>
+                    <div class="custom-control custom-radio">
+                      <input onclick="choosein()" type="radio" class="custom-control-input" id="defaultChecked"
+                        name="defaultExampleRadios" checked>
+                      <label class="custom-control-label" for="defaultChecked">Kho Trong Hệ Thống</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input onclick="chooseout()" type="radio" class="custom-control-input" id="defaultUnchecked"
+                        name="defaultExampleRadios">
+                      <label class="custom-control-label" for="defaultUnchecked">Kho Ngoài Hệ Thống</label>
+                    </div>
+                  </div>
+                  <select id="warehouse-in" name="cars" class="custom-select">
+                    <option selected>Custom Select Menu</option>
+                    <option value="kho1">kho1 - 800</option>
+                    <option value="kho2">kho2 - 1000</option>
+                    <option value="kho3">kho3 - 700</option>
+                  </select>
+                  <div id="warehouse-out">
+                    <div style="display: flex; position: relative;">
+                      <input type="text" class="form-control" style="width: 180px;">
+                      <select name="cars" class="custom-select" style="position: absolute;top:0;right:32px;width:180px">
+                        <option selected>Custom Select Menu</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                      </select>
+                    </div>
+                  </div>
+                  <label class="release">Số Lượng Xuất: <input type="text" class="form-control" id="usr"></label>
+                </div>
+                <div class="warehouse-knh">
+                  <p>Kho Nhập Hàng:</p>
+                  <select name="cars" class="custom-select">
+                    <option selected>Custom Select Menu</option>
+                    <option value="kho1">kho1 - 800</option>
+                    <option value="kho2">kho2 - 1000</option>
+                    <option value="kho3">kho3 - 700</option>
+                  </select>
+                </div>
+                <button type="button" class="btn btn-secondary">Thêm</button>
+              </fieldset>
+            </div>
+
+            <div class="warehouse-table">
+              <p>Danh Sách Kho</p>
+              <table class="table" style="border-bottom: 1px solid #dee2e6;">
+                <thead>
+                  <tr>
+                    <th>STT</th>
+                    <th>Kho Nhập</th>
+                    <th>Kho Xuất</th>
+                    <th>Số Lượng</th>
+                    <th>Loại Kho</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="warehouse-1">
+                    <td>1</td>
+                    <td>kho nhap</td>
+                    <td>kho xuat</td>
+                    <td>100</td>
+                    <td>Trong</td>
+                    <td>
+                      <a href="#" style="color:green">Sửa</a> | <a href="#" style="color:red">Xóa</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button type="button" class="btn btn-outline-success">Lưu</button>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function chooseout() {
+          document.getElementById("warehouse-in").style.display = "none";
+          document.getElementById("warehouse-out").style.display = "inline";
+        }
+        function choosein() {
+          document.getElementById("warehouse-in").style.display = "inline";
+          document.getElementById("warehouse-out").style.display = "none";
+        }
+      </script>
+    </div>
+  </div>
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../dist/js/demo.js"></script>
+</body>
+
+</html>

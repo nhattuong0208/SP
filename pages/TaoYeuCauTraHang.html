@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tạo Yêu Cầu Trả Hàng</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <!-- css -->
+  <link rel="stylesheet" href="../thong-assets/css/style.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <!-- ****************************   MENU   ******************************* -->
+    <div class="row" style="margin-right:0px; background:#1a8201">
+      <div class="col col-md">
+        <nav class="navbar navbar-expand navbar-primary navbar-dark">
+          <div class="menu-logo">
+            <img src="../thong-assets/img/heineken-open-your-world-logo-black-and-white.png" alt="">
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Danh Sách SKU</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Lập Kế Hoạch Kho</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Phân Bổ Hàng</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Thông Báo</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Điều Chuyển</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Danh Mục</a>
+            </li>
+            <li class="nav-item d-none d-sm-inline-block">
+              <a href="#" class="nav-link">Yêu Cầu Trả Hàng</a>
+            </li>
+          </ul>
+          <div class="menu-user">
+            <p>Tên Tài Khoản</p>
+            <p style="padding:0 5px">|</p><a href="#">Đăng Xuất</a>
+            <img src="../thong-assets/img/notification.png" alt="">
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ****************************   TIM KIEM   ******************************* -->
+    <div class="find">
+      <h3>Yêu Cầu Trả Hàng</h3>
+      <div class="choosewarehouse">
+        <p>Kho Nhận : </p>
+        <div class="custom-control custom-radio">
+          <input onclick="agency()" type="radio" class="custom-control-input" id="defaultChecked"
+            name="defaultExampleRadios" checked>
+          <label class="custom-control-label" for="defaultChecked">Kho Agency</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input onclick="province()" type="radio" class="custom-control-input" id="defaultUnchecked"
+            name="defaultExampleRadios">
+          <label class="custom-control-label" for="defaultUnchecked">Kho Tỉnh</label>
+        </div>
+        <select id="province" name="cars" class="custom-select">
+          <option selected>Custom Select Menu</option>
+          <option value="kho1">kho tỉnh 1</option>
+          <option value="kho2">kho tỉnh 2</option>
+          <option value="kho3">kho tỉnh 3</option>
+        </select>
+      </div>  
+      <label for="">Kho Trả:<br />
+        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+      </label>
+    </div>
+
+    <!-- **************************   danh sách kho cần trả hàng   ******************************* -->
+    <div class="container-fluid" style="text-align: center;">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-body">
+              <form role="form">
+                <div class="form-group">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th style="width:130px">
+                          <div class="listcheckbox">
+                            <label>
+                              <input type="checkbox" class="check" id="checkAll"> All
+                            </label>
+                          </div>
+                        </th>
+                        <th>Tên Kho</th>
+                        <th>Địa Chỉ</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="listcheckbox">
+                            <label>
+                              <input type="checkbox" class="check">
+                            </label>
+                          </div>
+                        </td>
+                        <td>kho tỉnh 1</td>
+                        <td>83/41 Phạm Văn Bạch, phường 15, Tân Bình</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="listcheckbox">
+                            <label>
+                              <input type="checkbox" class="check">
+                            </label>
+                          </div>
+                        </td>
+                        <td>kho tỉnh 2</td>
+                        <td>83/41 Phạm Văn Bạch, phường 15, Tân Bình</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="listcheckbox">
+                            <label>
+                              <input type="checkbox" class="check">
+                            </label>
+                          </div>
+                        </td>
+                        <td>kho tỉnh 3</td>
+                        <td>83/41 Phạm Văn Bạch, phường 15, Tân Bình</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </form>
+            </div>
+            <div class="card-footer clearfix">
+              <ul class="pagination pagination-sm m-0 float-right">
+                <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button type="button" class="btn btn-outline-success" type="button">Gửi Yêu Cầu</button>
+    </div>
+
+
+
+    <script>
+      function agency() {
+        document.getElementById("province").style.display = "none";
+      }
+      function province() {
+        document.getElementById("province").style.display = "inline";
+      }
+    </script>
+
+  </div>
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../dist/js/demo.js"></script>
+
+  <Script>
+    $("#checkAll").click(function () {
+      $(".check").prop('checked', $(this).prop('checked'));
+    });
+  </Script>
+
+</body>
+
+</html>
