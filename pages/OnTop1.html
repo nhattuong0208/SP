@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Danh Sách SKU</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="../plugins/daterangepicker/daterangepicker.css">
+  <!-- Bootstrap4 Duallistbox -->
+  <link rel="stylesheet" href="../plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+  <!-- css -->
+  <!-- <link rel="stylesheet" href="../thong-assets/css/style.css"> -->
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <div class="wrapper">
+
+    <style>
+      .info-container {
+        display: none;
+      }
+      body {
+        background-color: #1A8201;
+      }
+      .moveondoubleclick {
+        margin-top: 20px;
+      }
+      #bootstrap-duallistbox-nonselected-list_ {
+        height: 300px !important;
+      }
+      #bootstrap-duallistbox-selected-list_ {
+        height: 300px !important;
+      }
+    </style>
+
+
+
+    <!-- chọn danh sách outlet -->
+    <div class="card card-default list-outlet">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <div class="form-group">
+              <b style="font-size: 25px;">Danh Sách Outlet</b>
+              <select class="duallistbox" multiple="multiple">
+                <option class="p-2" style="font-size: 20px;" selected>Alabama</option>
+                <option class="p-2" style="font-size: 20px;">Alaska</option>
+                <option class="p-2" style="font-size: 20px;">California</option>
+                <option class="p-2" style="font-size: 20px;">Delaware</option>
+                <option class="p-2" style="font-size: 20px;">Tennessee</option>
+                <option class="p-2" style="font-size: 20px;">Texas</option>
+                <option class="p-2" style="font-size: 20px;">Washington</option>
+                <option class="p-2" style="font-size: 20px;">Texas</option>
+                <option class="p-2" style="font-size: 20px;">Washington</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- số lượng quà và set thời gian -->
+    <div class="card card-default">
+      <div class="card-body" style="position: relative;">
+        <b style="font-size: 25px;">Số Lượng Quà Và Thời Gian Đổi Set</b>
+        <div style="margin-top:20px; margin-left: 40px;"></div>
+        <div class="form-group d-flex">
+          <label style="font-size: 18px;line-height: 30px;">Đồng Vàng: </label>
+          <input style="margin-left: 59px;" type="number" class="form-control col-2">
+        </div>
+        <div class="form-group d-flex" style="margin-top:5px;">
+          <label style="font-size: 18px; line-height: 30px;">Lịch Đổi Set Quà:</label>
+          <div style="margin-left: 5px;" class="input-group col-6">
+            <div class="input-group-prepend">
+              <span class="input-group-text"><i class="far fa-clock"></i></span>
+            </div>
+            <input type="text" class="form-control float-right" id="reservationtime">
+          </div>
+        </div>
+      </div>
+      <button type="button" style="position: absolute; bottom:20px; right: 20px;" class="btn btn-block btn-success col-2">Đổi Set Quà On Top</button>
+    </div>
+  </div>
+
+
+
+  <!-- danh sách outlet đã chọn -->
+  <button data-toggle="modal" data-target="#OnTop" type="button" class="btn btn-default ">Tạo đợt set quà on top +</button>
+
+  <div class="ontop modal fade" id="OnTop" role="dialog">
+    <div class="modal-dialog" style=" max-width: 700px !important;">
+      <div class="modal-content">
+        <div class="modal-header bg-success">
+          <h4 class="modal-title">Danh Sách Outlet</h4>
+          <button type="button" class="close" style="outline: none; color: white; opacity: 1;" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="d-flex mb-2 justify-content-between" style="background-color: #e2e2e2;">
+          <p class="pt-2 pb-2 pl-2 mb-0" style="font-size: 20px;">CO.OP MART Gò Vấp</p>
+          <select class="form-control select2 col-3 text-white bg-success mt-1 mr-1">
+            <option selected="selected">Đồng Vàng</option>
+            <option>Bỏ Chọn</option>
+          </select>
+        </div>
+        <div class="d-flex mb-2 justify-content-between" style="background-color: #e2e2e2;">
+          <p class="pt-2 pb-2 pl-2 mb-0" style="font-size: 20px;">CO.OP MART Gò Vấp</p>
+          <select class="form-control select2 col-3 text-white bg-success mt-1 mr-1">
+            <option selected="selected">Đồng Vàng</option>
+            <option>Bỏ Chọn</option>
+          </select>
+        </div>
+        <div class="d-flex mb-2 justify-content-between" style="background-color: #e2e2e2;">
+          <p class="pt-2 pb-2 pl-2 mb-0" style="font-size: 20px;">CO.OP MART Gò Vấp</p>
+          <select class="form-control select2 col-3 text-white bg-success mt-1 mr-1">
+            <option selected="selected">Đồng Vàng</option>
+            <option>Bỏ Chọn</option>
+          </select>
+        </div>
+        <button class="btn btn-outline-success col-3" style="margin:5px 250px;">Lưu</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- jQuery -->
+  <script src="../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap4 Duallistbox -->
+  <script src="../plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+  <!-- InputMask -->
+  <script src="../plugins/moment/moment.min.js"></script>
+  <script src="../plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+  <!-- date-range-picker -->
+  <script src="../plugins/daterangepicker/daterangepicker.js"></script>
+
+  <script>
+    //Bootstrap Duallistbox
+    $('.duallistbox').bootstrapDualListbox()
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({
+      timePicker: true,
+      timePickerIncrement: 30,
+      locale: {
+        format: 'MM/DD/YYYY hh:mm A'
+      }
+    })
+  </script>
+</body>
+</html>
