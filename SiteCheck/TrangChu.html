@@ -1,0 +1,515 @@
+<!-- <!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript">
+
+    window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+          text: "My First Chart in CanvasJS"
+        },
+        dataPointWidth: 50,
+        data: [{
+          // KPU TOÀN CHƯƠNG TRÌNH
+          type: "column",
+          dataPoints: [
+            { label: "Hà Nội", y: 107 },
+            { label: "Hải Phòng", y: 115 },
+            { label: "Hải Dương", y: 110 },
+            { label: "Quảng Ninh", y: 105 },
+            { label: "Nam Định", y: 115 },
+            { label: "Ninh Bình", y: 120 },
+            { label: "Bắc Ninh", y: 103 },
+            { label: "Vĩnh Phúc", y: 106 }
+          ]
+        },
+        {
+          type: "line",
+          dataPoints: [
+            { label: "Hà Nội", y: 100 },
+            { label: "Hải Phòng", y: 100 },
+            { label: "Hải Dương", y: 100 },
+            { label: "Quảng Ninh", y: 100 },
+            { label: "Nam Định", y: 100 },
+            { label: "Ninh Bình", y: 100 },
+            { label: "Bắc Ninh", y: 100 },
+            { label: "Vĩnh Phúc", y: 100 }
+          ]
+        }
+        ]
+      });
+      chart.render();
+    }
+  </script>
+</head>
+
+<body>
+  <div id="chartContainer" style="height: 700px; width: 90%;"></div>
+</body>
+
+</html> -->
+
+
+<!-- 
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript">
+
+    window.onload = function () {
+      var chart = new CanvasJS.Chart("chartContainer", {
+        title: {
+          text: "My First Chart in CanvasJS"
+        },
+        dataPointWidth: 50,
+        data: [{
+          // KPU TOÀN CHƯƠNG TRÌNH
+          type: "column",
+          dataPoints: [
+            { label: "ngày 1", y: 1007 },
+            { label: "ngày 2", y: 1015 },
+            { label: "ngày 3", y: 1010 },
+            { label: "ngày 4", y: 1005 },
+            { label: "ngày 5", y: 1015 },
+            { label: "ngày 6", y: 1020 },
+            { label: "ngày 7", y: 1003 },
+            { label: "ngày 8", y: 1006 },
+            { label: "ngày 9", y: 1000 },
+            { label: "ngày 10", y: 1008 },
+            { label: "ngày 11", y: 1003 },
+            { label: "ngày 12", y: 1002 },
+            { label: "ngày 13", y: 1005 },
+            { label: "ngày 14", y: 1003 },
+            { label: "ngày 15", y: 1001 },
+          ]
+        },
+        {
+          type: "line",
+          dataPoints: [
+            { label: "ngày 1", y: 1000 },
+            { label: "ngày 2", y: 1000 },
+            { label: "ngày 3", y: 1000 },
+            { label: "ngày 4", y: 1000 },
+            { label: "ngày 5", y: 1000 },
+            { label: "ngày 6", y: 1000 },
+            { label: "ngày 7", y: 1000 },
+            { label: "ngày 8", y: 1000 },
+            { label: "ngày 9", y: 1000 },
+            { label: "ngày 10", y: 1000 },
+            { label: "ngày 11", y: 1000 },
+            { label: "ngày 12", y: 1000 },
+            { label: "ngày 13", y: 1000 },
+            { label: "ngày 14", y: 1000 },
+            { label: "ngày 15", y: 1000 }
+          ]
+        }
+        ]
+      });
+      chart.render();
+    }
+  </script>
+</head>
+
+<body>
+  <div id="chartContainer" style="height: 700px; width: 90%;"></div>
+</body>
+
+</html>  -->
+
+<!-- 
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+window.onload = function () {
+var options = {
+	animationEnabled: true,
+	title:{
+		text: "Outlet sitecheck by province"   
+	},
+	axisY:{
+		title:"outlet"
+	},
+	toolTip: {
+		shared: true,
+		reversed: true
+	},
+  dataPointWidth: 50,
+	data: [{
+		type: "stackedColumn",
+		name: "Đồng ý tham gia",
+		showInLegend: "true",
+		yValueFormatString: "#,##0 outlet",
+		dataPoints: [
+			{ y: 193 , label: "Hà Nội" },
+			{ y: 34, label: "Hải Phòng" },
+			{ y: 24, label: "Hải Dương" },
+			{ y: 22, label: "Quảng Ninh" },
+			{ y: 15, label: "Nam Định" },
+			{ y: 14, label: "Ninh Bình" },
+      { y: 15, label: "Bắc Ninh" },
+			{ y: 15, label: "Vĩnh Phúc" }
+		]
+	},
+	{
+		type: "stackedColumn",
+		name: "Không tham gia",
+		showInLegend: "true",
+		yValueFormatString: "#,##0 outlet",
+		dataPoints: [
+    { y: 10 , label: "Hà Nội" },
+			{ y: 5, label: "Hải Phòng" },
+			{ y: 6, label: "Hải Dương" },
+			{ y: 6, label: "Quảng Ninh" },
+			{ y: 8, label: "Nam Định" },
+			{ y: 3, label: "Ninh Bình" },
+      { y: 9, label: "Bắc Ninh" },
+			{ y: 11, label: "Vĩnh Phúc" }
+		]
+	},
+  {
+		type: "stackedColumn",
+		name: "Không khảo sát được",
+		showInLegend: "true",
+		yValueFormatString: "#,##0 outlet",
+		dataPoints: [
+    { y: 6 , label: "Hà Nội" },
+			{ y: 8, label: "Hải Phòng" },
+			{ y: 5, label: "Hải Dương" },
+			{ y: 9, label: "Quảng Ninh" },
+			{ y: 4, label: "Nam Định" },
+			{ y: 9, label: "Ninh Bình" },
+      { y: 5, label: "Bắc Ninh" },
+			{ y: 2, label: "Vĩnh Phúc" }
+		]
+	},
+  {
+		type: "stackedColumn",
+		name: "Chưa khảo sát",
+		showInLegend: "true",
+		yValueFormatString: "#,##0 outlet",
+		dataPoints: [
+    { y: 6 , label: "Hà Nội" },
+			{ y: 8, label: "Hải Phòng" },
+			{ y: 5, label: "Hải Dương" },
+			{ y: 9, label: "Quảng Ninh" },
+			{ y: 4, label: "Nam Định" },
+			{ y: 9, label: "Ninh Bình" },
+      { y: 5, label: "Bắc Ninh" },
+			{ y: 2, label: "Vĩnh Phúc" }
+		]
+	}
+  ]
+};
+
+$("#chartContainer").CanvasJSChart(options);
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 700px; width: 70%;"></div>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</body>
+</html>  -->
+
+<!-- 
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <style>
+    g[column-id]{
+      display: none;
+    }
+  </style>
+
+  <div class="row">
+    
+    <div class="col-sm-4">
+      <div id="piechart" style="width: 110%;"></div>
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Đồng ý tham gia', 40],
+            ['Không đồng ý tham gia', 5],
+            ['Không khảo sát được', 15],
+            ['Chưa khảo sát', 25]
+          ]);
+          var options = {'height': 500 };
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+          chart.draw(data, options);
+        }
+      </script>
+    </div>
+
+
+   
+    <div class="col-sm-8" style="overflow-x:scroll">
+      <script>
+        window.onload = function () {
+          var options = {
+            animationEnabled: true,
+            title: {
+              text: "Outlet sitecheck by province"
+            },
+            axisY: {
+              title: "outlet"
+            },
+            toolTip: {
+              shared: true,
+              reversed: true
+            },
+            dataPointWidth: 50,
+            data: [{
+              type: "stackedColumn",
+              name: "Đồng ý tham gia",
+              showInLegend: "true",
+              yValueFormatString: "#,##0 outlet",
+              dataPoints: [
+                { y: 193, label: "Hà Nội" },
+                { y: 34, label: "Hải Phòng" },
+                { y: 24, label: "Hải Dương" },
+                { y: 22, label: "Quảng Ninh" },
+                { y: 15, label: "Nam Định" },
+                { y: 14, label: "Ninh Bình" },
+                { y: 15, label: "Bắc Ninh" },
+                { y: 15, label: "Vĩnh Phúc" },
+              ]
+            },
+            {
+              type: "stackedColumn",
+              name: "Không tham gia",
+              showInLegend: "true",
+              yValueFormatString: "#,##0 outlet",
+              dataPoints: [
+                { y: 10, label: "Hà Nội" },
+                { y: 5, label: "Hải Phòng" },
+                { y: 6, label: "Hải Dương" },
+                { y: 6, label: "Quảng Ninh" },
+                { y: 8, label: "Nam Định" },
+                { y: 3, label: "Ninh Bình" },
+                { y: 9, label: "Bắc Ninh" },
+                { y: 11, label: "Vĩnh Phúc" }
+              ]
+            },
+            {
+              type: "stackedColumn",
+              name: "Không khảo sát được",
+              showInLegend: "true",
+              yValueFormatString: "#,##0 outlet",
+              dataPoints: [
+                { y: 6, label: "Hà Nội" },
+                { y: 8, label: "Hải Phòng" },
+                { y: 5, label: "Hải Dương" },
+                { y: 9, label: "Quảng Ninh" },
+                { y: 4, label: "Nam Định" },
+                { y: 9, label: "Ninh Bình" },
+                { y: 5, label: "Bắc Ninh" },
+                { y: 2, label: "Vĩnh Phúc" }
+              ]
+            },
+            {
+              type: "stackedColumn",
+              name: "Chưa khảo sát",
+              showInLegend: "true",
+              yValueFormatString: "#,##0 outlet",
+              dataPoints: [
+                { y: 6, label: "Hà Nội" },
+                { y: 8, label: "Hải Phòng" },
+                { y: 5, label: "Hải Dương" },
+                { y: 9, label: "Quảng Ninh" },
+                { y: 4, label: "Nam Định" },
+                { y: 9, label: "Ninh Bình" },
+                { y: 5, label: "Bắc Ninh" },
+                { y: 2, label: "Vĩnh Phúc" }
+              ]
+            }
+            ]
+          };
+
+          $("#chartContainer").CanvasJSChart(options);
+        }
+      </script>
+      <div id="chartContainer" style="height: 700px; width: 100%;"></div>
+    </div>
+    
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <style>
+    .wrapper {
+      height: 500px;
+    }
+  </style>
+
+  <h1 style="text-align: center; margin-bottom: 100px;">HIỆN TRẠNG SITECHECK OUTLET</h1>
+  <div class="row">
+    <div class="col-sm-4">
+      <canvas id="pie-chart" width="auto" height="auto"></canvas>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+      <script>
+        new Chart(document.getElementById("pie-chart"), {
+          type: 'pie',
+          data: {
+            labels: ["Đồng ý", "Không đồng ý", "Chưa khảo sát", "Không thể khảo sát"],
+            datasets: [{
+              label: "Hiện trạng sitecheck toàn dự án",
+              backgroundColor: ["#24E0EE", "#F26A8A", "#F2D26A", "#BBBBBB"],
+              data: [500, 150, 50, 50]
+            }]
+          },
+          options: {
+            
+            legend: {
+              display: false
+            },
+          }
+        });
+      </script>
+      <h3 style="text-align: center; margin-bottom: 50px;">Toàn dự án</h3>
+      <div style="width: 100%; display:flex;">
+        <div style="width: 25px; height: 25px;background-color: #24E0EE; margin-left:35%; margin-right: 10px;"></div>
+        <p>Đồng ý</p>
+      </div>
+      <div style="width: 100%; display:flex;">
+        <div style="width: 25px; height: 25px;background-color: #F26A8A; margin-left:35%; margin-right: 10px;"></div>
+        <p>Không đồng ý</p>
+      </div>
+      <div style="width: 100%; display:flex;">
+        <div style="width: 25px; height: 25px;background-color: #F2D26A; margin-left:35%; margin-right: 10px;"></div>
+        <p>Chưa khảo sát</p>
+      </div>
+      <div style="width: 100%; display:flex;">
+        <div style="width: 25px; height: 25px;background-color: #BBBBBB; margin-left:35%; margin-right: 10px;"></div>
+        <p>Không thể khảo sát</p>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <div class="bs-example">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" data-toggle="tab" style="font-size: 25px;">North</a>
+          </li>
+          <li class="nav-item">
+            <a href="#profile" class="nav-link" data-toggle="tab" style="font-size: 25px;">Central</a>
+          </li>
+          <li class="nav-item">
+            <a href="#messages" class="nav-link" data-toggle="tab" style="font-size: 25px;">South</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade show active pt-5" id="home">
+            <div class="wrapper">
+              <canvas id="myChart4"></canvas>
+            </div>
+          </div>
+          <div class="tab-pane fade pt-5" id="profile">
+            BIỂU ĐỒ
+          </div>
+          <div class="tab-pane fade pt-5" id="messages">
+            BIỂU ĐỒ
+          </div>
+        </div>
+      </div>
+      <h3 style="text-align: center;">Từng Khu Vực</h3>
+
+
+      <script>
+        var ctx = document.getElementById("myChart4").getContext('2d');
+        var myChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            labels: ["Hà Nội", "Hải Phòng", "Hải Dương", "Quảng Ninh", "Nam Định", "Ninh Bình", "Bắc Ninh", "Vĩnh Phúc", "Hà Nội", "Hải Phòng", "Hải Dương", "Quảng Ninh", "Nam Định", "Ninh Bình", "Bắc Ninh", "Vĩnh Phúc"],
+            datasets: [{
+              label: 'Đồng ý',
+              backgroundColor: "#24E0EE",
+              data: [87, 59, 87, 56, 58, 87, 59, 87, 45, 87, 59, 87, 56, 58, 87, 59, 87, 45],
+            }, {
+              label: 'Không đồng ý',
+              backgroundColor: "#F26A8A",
+              data: [12, 12, 5, 23, 12, 12, 12, 23, 23, 12, 23, 5, 23, 23, 12, 23, 23, 23],
+            }, {
+              label: 'Chưa khảo sát',
+              backgroundColor: "#F2D26A",
+              data: [12, 12, 5, 12, 12, 12, 12, 12, 51, 12, 12, 5, 56, 58, 12, 12, 12, 12],
+            }, {
+              label: 'Không thể khảo sát',
+              backgroundColor: "#BBBBBB",
+              data: [12, 5, 5, 5, 5, 12, 12, 12, 12, 12, 12, 5, 5, 5, 12, 12, 12, 12],
+            }],
+          },
+          options: {
+            tooltips: {
+              displayColors: true,
+              callbacks: {
+                mode: 'x',
+              },
+            },
+            scales: {
+              xAxes: [{
+                stacked: true,
+                gridLines: {
+                  display: false,
+                }
+              }],
+              yAxes: [{
+                stacked: true,
+                ticks: {
+                  beginAtZero: true,
+                },
+                type: 'linear',
+              }]
+            },
+            responsive: true,
+            maintainAspectRatio: false,
+            legend: { position: 'bottom' },
+          }
+        });
+      </script>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</body>
+
+</html>
