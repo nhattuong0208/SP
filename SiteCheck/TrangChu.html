@@ -77,10 +77,12 @@
             </div>
           </div>
           <div class="tab-pane fade pt-5" id="profile">
-            BIỂU ĐỒ
+             <div class="wrapper">
+              <canvas id="myChart44"></canvas>
+            </div>
           </div>
           <div class="tab-pane fade pt-5" id="messages">
-            BIỂU ĐỒ
+             kdkd
           </div>
         </div>
       </div>
@@ -139,6 +141,60 @@
           }
         });
       </script>
+
+
+<script>
+  var ctx = document.getElementById("myChart44").getContext('2d');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ["Hà Nội", "Hải Phòng", "Hải Dương", "Quảng Ninh", "Nam Định", "Ninh Bình", "Bắc Ninh", "Vĩnh Phúc", "Hà Nội", "Hải Phòng", "Hải Dương", "Quảng Ninh", "Nam Định", "Ninh Bình", "Bắc Ninh", "Vĩnh Phúc"],
+      datasets: [{
+        label: 'Đồng ý',
+        backgroundColor: "#24E0EE",
+        data: [1, 59, 1, 56, 58, 1, 59, 1, 45, 1, 59, 1, 56, 58, 1, 59, 1, 45],
+      }, {
+        label: 'Không đồng ý',
+        backgroundColor: "#F26A8A",
+        data: [12, 12, 5, 23, 12, 12, 12, 23, 23, 12, 23, 5, 23, 23, 12, 23, 23, 23],
+      }, {
+        label: 'Chưa khảo sát',
+        backgroundColor: "#F2D26A",
+        data: [12, 12, 5, 12, 12, 12, 12, 12, 51, 12, 12, 5, 56, 58, 12, 12, 12, 12],
+      }, {
+        label: 'Không thể khảo sát',
+        backgroundColor: "#BBBBBB",
+        data: [12, 5, 5, 5, 5, 12, 12, 12, 12, 12, 12, 5, 5, 5, 12, 12, 12, 12],
+      }],
+    },
+    options: {
+      tooltips: {
+        displayColors: true,
+        callbacks: {
+          mode: 'x',
+        },
+      },
+      scales: {
+        xAxes: [{
+          stacked: true,
+          gridLines: {
+            display: false,
+          }
+        }],
+        yAxes: [{
+          stacked: true,
+          ticks: {
+            beginAtZero: true,
+          },
+          type: 'linear',
+        }]
+      },
+      responsive: true,
+      maintainAspectRatio: false,
+      legend: { position: 'bottom' },
+    }
+  });
+</script>
     </div>
   </div>
 
