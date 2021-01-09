@@ -32,20 +32,19 @@
 
 
       <canvas id="myChart" ></canvas>
-      <h3 style="text-align: center; margin-top: 100px;">Toàn Dự Án</h3>
       <script>
         var ctx = document.getElementById('myChart').getContext("2d");
 
         var myChart = new Chart(ctx, {
           type: 'horizontalBar',
           data: {
-            labels: ["Cần khảo sát", "Đã thêm vào", "Đồng ý", "Không đồng ý", "Chưa khảo sát", "Không thể khảo sát"],
+            labels: ["Cần khảo sát", "Đã thêm vào","Chưa thêm vào", "Đồng ý", "Không đồng ý", "Chưa khảo sát", "Không thể khảo sát"],
             datasets: [{
               label: "Data",
               borderWidth: 1,
               fill: true,
-              backgroundColor: ["#9AFEA4","#989CFF","#66E7D9", "#FF7D9C","#FFEC68","#BBBBBB"],
-              data: [100, 90, 60, 15, 10, 5]
+              backgroundColor: ["#00BB13","#42FC54","#C7FFCC","#66E7D9", "#FF7D9C","#FFEC68","#BBBBBB"],
+              data: [100, 90,10, 60, 15, 10, 5]
             }]
           },
           options: {
@@ -99,7 +98,7 @@
         <canvas id="myChart4"></canvas>
       </div>
 
-      <h3 style="text-align: center;">Từng Khu Vực</h3>
+      <h3 style="text-align: center;">Từng Tỉnh</h3>
 
 
       <script>
