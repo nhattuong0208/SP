@@ -18,7 +18,7 @@
   </style>
 
   <h1 style="text-align: center; margin-bottom: 100px;">HIỆN TRẠNG SITECHECK OUTLET</h1>
-  <div class="row">
+  <div class="row" style="margin:0;">
     <div class="col-sm-4" style="padding-left: 30px; padding-right: 30px;">
       <div class="form-group" style="margin-left: 30px;">
         <label for="sel1"><b>KHU VỰC:</b></label>
@@ -31,22 +31,10 @@
       </div>
 
 
-      <canvas id="myChart" style="height: 500px!important;"></canvas>
+      <canvas id="myChart" ></canvas>
       <h3 style="text-align: center; margin-top: 100px;">Toàn Dự Án</h3>
       <script>
         var ctx = document.getElementById('myChart').getContext("2d");
-
-        var barStroke = ctx.createLinearGradient(700, 0, 120, 0);
-        barStroke.addColorStop(0, 'rgba(0, 255, 188, 0.6)');
-        barStroke.addColorStop(1, 'rgba(0, 205, 194, 0.6)');
-
-        var barFill = ctx.createLinearGradient(700, 0, 120, 0);
-        barFill.addColorStop(0, "rgba(0, 255, 188, 0.6)");
-        barFill.addColorStop(1, "rgba(0, 205, 194, 0.6)");
-
-        var barFillHover = ctx.createLinearGradient(700, 0, 120, 0);
-        barFillHover.addColorStop(0, "rgba(0, 255, 188, 0.8)");
-        barFillHover.addColorStop(1, "rgba(0, 205, 194, 0.6)");
 
         var myChart = new Chart(ctx, {
           type: 'horizontalBar',
@@ -54,11 +42,9 @@
             labels: ["Cần khảo sát", "Đã thêm vào", "Đồng ý", "Không đồng ý", "Chưa khảo sát", "Không thể khảo sát"],
             datasets: [{
               label: "Data",
-              borderColor: barStroke,
               borderWidth: 1,
               fill: true,
-              backgroundColor: barFill,
-              hoverBackgroundColor: barFillHover,
+              backgroundColor: ["#9AFEA4","#989CFF","#66E7D9", "#FF7D9C","#FFEC68","#BBBBBB"],
               data: [100, 90, 60, 15, 10, 5]
             }]
           },
@@ -129,15 +115,15 @@
             }, {
               label: 'Không đồng ý',
               backgroundColor: "#FF7D9C",
-              data: [10, 5, 5, 5, 5, 5, 6, 6],
+              data: [10, 5, 5, 0, 5, 5, 6, 6],
             }, {
               label: 'Chưa khảo sát',
               backgroundColor: "#FFEC68",
-              data: [20, 16, 10, 12, 12, 12, 12, 12],
+              data: [20, 16, 10, 2, 12, 12, 12, 12],
             }, {
               label: 'Không thể khảo sát',
               backgroundColor: "#BBBBBB",
-              data: [12, 12, 5, 5, 5, 12, 12, 12],
+              data: [12, 12, 5, 5, 2, 12, 12, 12],
             }],
           },
           options: {
