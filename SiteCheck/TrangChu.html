@@ -19,9 +19,20 @@
 
   <h1 style="text-align: center; margin-bottom: 100px;">HIỆN TRẠNG SITECHECK OUTLET</h1>
   <div class="row">
-    <div class="col-sm-4">
-        <canvas id="myChart" style="height: 500px!important;"></canvas>
-        <h3 style="text-align: center; margin-top: 50px;">Toàn Dự Án</h3>
+    <div class="col-sm-4" style="padding-left: 30px; padding-right: 30px;">
+      <div class="form-group" style="margin-left: 30px;">
+        <label for="sel1"><b>KHU VỰC:</b></label>
+        <select class="form-control" id="sel1">
+          <option>Khu vực 1</option>
+          <option>Khu vực 2</option>
+          <option>Khu vực 3</option>
+          <option>Khu vực 4</option>
+        </select>
+      </div>
+
+
+      <canvas id="myChart" style="height: 500px!important;"></canvas>
+      <h3 style="text-align: center; margin-top: 100px;">Toàn Dự Án</h3>
       <script>
         var ctx = document.getElementById('myChart').getContext("2d");
 
@@ -98,19 +109,10 @@
 
 
     <div class="col-sm-8">
-      <div class="form-group" style="width: 300px;">
-        <label for="sel1">Khu vực:</label>
-        <select class="form-control" id="sel1">
-          <option>Khu vực 1</option>
-          <option>Khu vực 2</option>
-          <option>Khu vực 3</option>
-          <option>Khu vực 4</option>
-        </select>
-      </div>
       <div class="wrapper">
-        <canvas id="myChart4"></canvas>     
+        <canvas id="myChart4"></canvas>
       </div>
-      
+
       <h3 style="text-align: center;">Từng Khu Vực</h3>
 
 
@@ -119,7 +121,7 @@
         var myChart = new Chart(ctx, {
           type: 'bar',
           data: {
-            labels: ["HN1-Hà Nội (100)", "HP-Hải Phòng (100)", "HD-Hải Dương (100)", "QN-Quảng Ninh (100)", "NĐ-Nam Định (100)", "NB-Ninh Bình (100)", "BN-Bắc Ninh (100)", "VP-Vĩnh Phúc (100)"],
+            labels: ["Hà Nội", "Hải Phòng", "Hải Dương", "Quảng Ninh", "Nam Định", "Ninh Bình", "Bắc Ninh", "Vĩnh Phúc"],
             datasets: [{
               label: 'Đồng ý',
               backgroundColor: "#66E7D9",
