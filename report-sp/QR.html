@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Danh Sách SKU</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body style="width: 100%; background-color: #058400;">
+  <style>
+    .fa-star {
+      color: rgb(192, 192, 192);
+    }
+
+    .checked {
+      color: #FD4;
+    }
+
+    div.stars {
+      display: inline-block;
+    }
+
+    input.star {
+      display: none;
+    }
+
+    label.star {
+      padding: 5px;
+      font-size: 36px;
+      color: rgb(153, 153, 153);
+      transition: all .2s;
+    }
+
+    input.star:checked~label.star:before {
+      content: '\f005';
+      color: #FD4;
+      transition: all .25s;
+    }
+
+    input.star-4:checked~label.star:before {
+      color: #FE7;
+      text-shadow: 0 0 20px #952;
+    }
+
+    input.star-1:checked~label.star:before {
+      color: #FD4;
+    }
+
+    label.star:hover {
+      transform: rotate(-15deg) scale(1.3);
+    }
+
+    label.star:before {
+      content: '\f006';
+      font-family: FontAwesome;
+    }
+
+    .rating__background {
+      fill: rgb(202, 202, 202);
+      stroke: red;
+      stroke-width: 1;
+      height: 100%;
+      width: 100%;
+    }
+
+    .rating__value {
+      fill: #FD4;
+      height: 100%;
+    }
+  </style>
+
+
+  <p class="text-white text-center" style="font-size: 30px;">THÔNG TIN NHÂN VIÊN</p>
+  <div class="row d-flex" style="margin:0 auto; width:100%">
+    <div style="margin:0 auto; width: 100%;" class="d-flex align-items-stretch">
+      <div class="card bg-light" style="width: 90%;margin:0 auto">
+        <div class="row card-body pt-0 d-flex" style="margin-top:20px">
+          <div class="col-md-6">
+            <div class="text-center" style="width: 100%;">
+              <img style="width: auto; max-height: 560px;"
+                src="https://toplist.vn/images/800px/tiem-chup-anh-the-lay-ngay-dep-nhat-o-hue-chu-de-da-duoc-nhan-cua-kieu-nguyen-317636.jpg"
+                alt="" class="img-fluid">
+            </div>
+            
+            <div style="width: 100%; text-align: center;">
+              <!-- TỔNG SỐ SAO CỦA NHÂN VIÊN -->
+              <h1>3.5</h1>
+              <svg viewBox="0 0 1000 200" class='rating' style="max-width: 250px;padding-left: 35px;">
+                <defs>
+                  <polygon id="star" points="100,0 131,66 200,76 150,128 162,200 100,166 38,200 50,128 0,76 69,66 " />
+                  <clipPath id="stars">
+                    <use xlink:href="#star" />
+                    <use xlink:href="#star" x="20%" />
+                    <use xlink:href="#star" x="40%" />
+                    <use xlink:href="#star" x="60%" />
+                    <!-- <use xlink:href="#star" x="80%" /> -->
+                  </clipPath>
+                </defs>
+                <rect class='rating__background' clip-path="url(#stars)"></rect>
+                <rect id="star__value" class='rating__value' clip-path="url(#stars)"></rect>
+
+                <!-- HIỂN THỊ % TỔNG SỐ SAO. -->
+                <script>
+                  var TBsao = 3.5;
+                  var PTsao = TBsao * 100 / 5;
+                  document.getElementById("star__value").style.width = PTsao + "%";
+                </script>
+              </svg>
+            </div>
+
+            <div>
+              <h4 class="text-center" style="margin-top: 20px;"><b>Nguyễn Thị Thu Hương</b></h4>
+              <p class="text-center">Mã nhân viên: SP001</p>
+              <p class="text-center">Số ngày đã đi làm: <span style="color: green;">7</span>/<span
+                  style="color: red">10</span></p>
+              <p class="text-center">Ngày training: 10/10/2021</p>
+              <p class="text-center">Tổng số sản phẩm bán ra: 100</p>
+              <p class="text-center">Tổng số cửa hàng đã làm việc: 1</p>
+              <p class="text-center">Chi tiết bán hàng: <a href="#">chi tiết</a></p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <hr />
+            <h4 class="text-center" style="margin-top: 20px; color: red;"><b>Đánh giá nhân viên</b></h4>
+
+            <div class="stars" style="margin:0 auto; width: 100%; text-align: center;">
+              <!-- CHẤM SAO CHO NHÂN VIÊN -->
+              <form action="">
+                <input class="star star-4" id="star-4" type="radio" name="star" />
+                <label class="star star-4" for="star-4"></label>
+                <input class="star star-3" id="star-3" type="radio" name="star" />
+                <label class="star star-3" for="star-3"></label>
+                <input class="star star-2" id="star-2" type="radio" name="star" />
+                <label class="star star-2" for="star-2"></label>
+                <input class="star star-1" id="star-1" type="radio" name="star" />
+                <label class="star star-1" for="star-1"></label>
+              </form>
+            </div>
+
+            <div class="row pb-2">
+              <div class="col-8">1. Nắm vững thông tin chương trình.</div>
+              <div class="col-4">
+                <select class="form-control" id="sel1">
+                  <option>Tốt</option>
+                  <option>Trung bình</option>
+                  <option>Yếu</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row pb-2">
+              <div class="col-8">2. Tác phong và thái độ (niềm nở với khách, lanh lợi, hoạt bát, ...).</div>
+              <div class="col-4">
+                <select class="form-control" id="sel1">
+                  <option>Tốt</option>
+                  <option>Trung bình</option>
+                  <option>Yếu</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-8">3. Ý kiến khác (nêu rõ).</div>
+            </div>
+            <input type="text" class="form-control" id="usr">
+
+
+
+            <hr />
+            <h4 class="text-center" style="margin-top: 20px; color: red;"><b>Đánh giá cửa hàng</b></h4>
+
+            <div class="row pb-2">
+              <div class="col-8">1. Tồn hàng hóa ( trên 50 thùng là tốt, 30 - 50 thùng là trung bình, dưới 30 thùng là
+                yếu)</div>
+              <div class="col-4">
+                <select class="form-control" id="sel1">
+                  <option>Tốt</option>
+                  <option>Trung bình</option>
+                  <option>Yếu</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row pb-2">
+              <div class="col-8">2. Tồn quà tặng (back up trên 90% quà là tốt, 70% - 90% là trung bình, dưới 70% là yếu)
+              </div>
+              <div class="col-4">
+                <select class="form-control" id="sel1">
+                  <option>Tốt</option>
+                  <option>Trung bình</option>
+                  <option>Yếu</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row pb-2">
+              <div class="col-8">3. Trưng bày hàng hóa, quà tặng.
+              </div>
+              <div class="col-4">
+                <select class="form-control" id="sel1">
+                  <option>Tốt</option>
+                  <option>Trung bình</option>
+                  <option>Yếu</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-8">4. Ý kiến khác (nêu rõ).</div>
+            </div>
+            <input type="text" class="form-control" id="usr">
+
+            <hr />
+            <div class="row pb-2">
+              <div class="col-8" style="color: #0889D4;">Anh/chị có thưởng cho nhân viên thẻ cào điện thoại/phiếu siêu
+                thị hay không? </div>
+              <div class="col-4">
+                <select class="form-control" id="sel1">
+                  <option>Có</option>
+                  <option>Không</option>
+                </select>
+              </div>
+            </div>
+
+            <p class="text-left pt-2"> <i>*Tài khoản: nguyenvannam_nv</i> </p>
+            <p class="text-left" style="margin:0"> <i>*Tên người đánh giá:</i> </p>
+            <input type="text" class="form-control" id="usr">
+
+            <button type="button" class="btn btn-success mt-2"
+              style="width:100%;">Lưu</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
