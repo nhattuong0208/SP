@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+
+<body>
+<style>
+  .inventory{
+    margin:30px;
+    background-color: white;
+    position: relative;
+    border: 2px solid white;
+}
+.inventory .green{
+    color:#02cb16; 
+}
+
+.inventory-img img {
+    height: auto;
+    width: 100%;
+}
+.inventory-img{
+    text-align: center;
+    background-color: white!important;
+}
+
+.listinventory{
+    margin-top: 1px;
+}
+.listinventory th{
+    background-color: #085805;
+    color: white;
+    text-align: center;
+}
+.listinventory td{
+    text-align: center;
+}
+
+
+.listinventory td div{
+    padding:3px 2px;
+    border-radius: 3px;
+    left: 90%;
+    background-color: #085805;
+}
+.listinventory td div a{
+    color:white;
+}
+.listinventory td div:hover{
+    background-color:#2D8736;
+}
+.table thead th {
+  vertical-align:middle!important;
+}
+</style>
+<div class="inventory">
+    <div class="inventory-title" style="color: white;">Thông tin set quà</div>
+    <div style="overflow-x:auto;">
+    <table class="table table-bordered listinventory">
+        <thead>
+          <tr>
+            <th scope="col" rowspan="3" style="text-align: center;">Set quà</th>
+            <th scope="col" colspan="7">Sản Phẩm</th>
+            <th scope="col" rowspan="3"><a href="#">+ Thêm set mới</a></th>
+          </tr>
+          <tr>
+            <th scope="col">Nến</th>
+            <th scope="col">Pack 6 Heineken 0.0</th>
+            <th scope="col">4 lon TSC</th>
+            <th scope="col">Strongbow</th>
+            <th scope="col">Voucher</th>
+            <th scope="col">Magnum</th>
+            <th scope="col">Alu</th>
+          </tr>
+          <tr>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="color: red;">1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>Ụ kệ</td>
+          </tr>
+          <tr>
+            <td style="color: red;">2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>Ụ kệ</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
