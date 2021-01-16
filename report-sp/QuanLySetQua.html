@@ -26,10 +26,7 @@
     height: auto;
     width: 100%;
 }
-.inventory-img{
-    text-align: center;
-    background-color: white!important;
-}
+
 
 .listinventory{
     margin-top: 1px;
@@ -66,9 +63,12 @@
     <table class="table table-bordered listinventory">
         <thead>
           <tr>
+            <th scope="col" colspan="13" style="text-align:left;">THÔNG TIN SET QUÀ CHÍNH</th>
+          </tr>
+          <tr>
             <th scope="col" rowspan="3" style="text-align: center;">Set quà</th>
             <th scope="col" colspan="7">Sản Phẩm</th>
-            <th scope="col" rowspan="3"><a href="#">+ Thêm set mới</a></th>
+            <th scope="col" rowspan="3"><a href="" data-toggle="modal" data-target="#myModal" style="color: white;">+ Thêm set mới</a></th>
           </tr>
           <tr>
             <th scope="col">Nến</th>
@@ -80,13 +80,13 @@
             <th scope="col">Alu</th>
           </tr>
           <tr>
-            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
-            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
-            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
-            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
-            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
-            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
-            <th scope="col" class="inventory-img"><img src="./img/ken24.png" alt=""></th>
+            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
+            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
+            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
+            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
+            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
+            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
+            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
           </tr>
         </thead>
         <tbody>
@@ -99,7 +99,7 @@
             <td>1</td>
             <td>1</td>
             <td>1</td>
-            <td>Ụ kệ</td>
+            <td><a href="" style="color: green;">Sửa</a> | <a href="" style="color: red;">Xóa</a> </td>
           </tr>
           <tr>
             <td style="color: red;">2</td>
@@ -110,13 +110,54 @@
             <td>1</td>
             <td>1</td>
             <td>1</td>
-            <td>Ụ kệ</td>
+            <td><a href="" style="color: green;">Sửa</a> | <a href="" style="color: red;">Xóa</a> </td>
           </tr>
         </tbody>
       </table>
     </div>
 </div>
 
+
+    <!-- ****** thêm set ****** -->
+<style>
+  .modal th{
+    text-align: center;
+  }
+  .modal td{
+    text-align: center;
+  }
+</style>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" style="color: green;">Thêm set mới</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Hình quà</th>
+                      <th>Tên quà</th>
+                      <th>Số lượng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img style="height: 30px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></td>
+                      <td>quà 1</td>
+                      <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                      <td><img style="height: 30px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></td>
+                      <td>quà 2</td>
+                      <td><input type="text"></td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+      </div>
+  </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
