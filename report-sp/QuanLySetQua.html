@@ -2,165 +2,297 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 
 <body>
-<style>
-  .inventory{
-    margin:30px;
-    background-color: white;
-    position: relative;
-    border: 2px solid white;
-}
-.inventory .green{
-    color:#02cb16; 
-}
+  <style>
+    body {
+      background-color: green;
+    }
 
-.inventory-img img {
-    height: auto;
-    width: 100%;
-}
+    .listinventory th {
+      background-color: #085805;
+      color: white;
+      text-align: center;
+    }
 
+    .listinventory td {
+      text-align: center;
+    }
+  </style>
 
-.listinventory{
-    margin-top: 1px;
-}
-.listinventory th{
-    background-color: #085805;
-    color: white;
-    text-align: center;
-}
-.listinventory td{
-    text-align: center;
-}
-
-
-.listinventory td div{
-    padding:3px 2px;
-    border-radius: 3px;
-    left: 90%;
-    background-color: #085805;
-}
-.listinventory td div a{
-    color:white;
-}
-.listinventory td div:hover{
-    background-color:#2D8736;
-}
-.table thead th {
-  vertical-align:middle!important;
-}
-</style>
-<div class="inventory">
-    <div class="inventory-title" style="color: white;">Thông tin set quà</div>
-    <div style="overflow-x:auto;">
-    <table class="table table-bordered listinventory">
-        <thead>
-          <tr>
-            <th scope="col" colspan="13" style="text-align:left;">THÔNG TIN SET QUÀ CHÍNH</th>
-          </tr>
-          <tr>
-            <th scope="col" rowspan="3" style="text-align: center;">Set quà</th>
-            <th scope="col" colspan="7">Sản Phẩm</th>
-            <th scope="col" rowspan="3"><a href="" data-toggle="modal" data-target="#myModal" style="color: white;">+ Thêm set mới</a></th>
-          </tr>
-          <tr>
-            <th scope="col">Nến</th>
-            <th scope="col">Pack 6 Heineken 0.0</th>
-            <th scope="col">4 lon TSC</th>
-            <th scope="col">Strongbow</th>
-            <th scope="col">Voucher</th>
-            <th scope="col">Magnum</th>
-            <th scope="col">Alu</th>
-          </tr>
-          <tr>
-            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
-            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
-            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
-            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
-            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
-            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
-            <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="color: red;">1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td><a href="" style="color: green;">Sửa</a> | <a href="" style="color: red;">Xóa</a> </td>
-          </tr>
-          <tr>
-            <td style="color: red;">2</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td><a href="" style="color: green;">Sửa</a> | <a href="" style="color: red;">Xóa</a> </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<div class="row" style="margin: 20px; color: white;">
+  <div class="col-md-4">
+    <p><b>Mã outlet: </b></p>
+    <p><b>Tên outlet: </b></p>
+    <p><b>Ca làm việc: </b></p>
+  </div>
+  <div class="col-md-4">
+    <p><b>Tên chủ outlet: </b></p>
+    <p><b>Số điện thoại chủ outlet: </b></p>
+    <p><b>Thời gian làm việc: </b>6h-10h</p>
+  </div>
+  <div class="col-md-4">
+    <p><b>Tên SR: </b></p>
+    <p><b>Số điện thoại SR: </b></p>
+    <p><b>Địa chỉ: </b></p>
+  </div>
 </div>
+
+  <hr style="background-color: honeydew;">
+  <div>
+    <div class="tab-content">
+      <ul class="nav nav-tabs" role="tablist" style="background: gainsboro; width: 270px;">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Set quà chính</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Set Strongbow</a>
+        </li>
+      </ul><!-- Tab panes -->
+      <div class="tab-pane active" id="tabs-1" role="tabpanel">
+        <div class="inventory"
+          style="background-color: white;position: relative;border: 2px solid white;">
+          <div style="overflow-x:auto;">
+            <table class="table table-bordered listinventory">
+              <thead>
+                <tr>
+                  <th scope="col" colspan="13" style="text-align:left;">THÔNG TIN SET QUÀ CHÍNH</th>
+                </tr>
+                <tr>
+                  <th scope="col" rowspan="3" style="text-align: center; vertical-align: middle !important;">Set quà
+                  </th>
+                  <th scope="col" colspan="7">Sản Phẩm</th>
+                  <th scope="col" rowspan="3" style=" vertical-align: middle !important;"><a href="" data-toggle="modal"
+                      data-target="#myModal" style="color: white">+
+                      Thêm set mới</a></th>
+                </tr>
+                <tr>
+                  <th scope="col">Nến</th>
+                  <th scope="col">Pack 6 Heineken 0.0</th>
+                  <th scope="col">4 lon TSC</th>
+                  <th scope="col">Strongbow</th>
+                  <th scope="col">Voucher</th>
+                  <th scope="col">Magnum</th>
+                  <th scope="col">Alu</th>
+                </tr>
+                <tr>
+                  <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                      src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                      alt=""></th>
+                  <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                      src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                      alt=""></th>
+                  <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                      src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                      alt=""></th>
+                  <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                      src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                      alt=""></th>
+                  <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                      src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                      alt=""></th>
+                  <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                      src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                      alt=""></th>
+                  <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                      src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                      alt=""></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>
+                    <p style="color: green;">Hết set</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>
+                    <p style="color: green;">Đang dùng</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>
+                    <p style="color: green;">Set tiếp theo</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td><button type="button" class="btn btn-danger">Xóa</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ****************TAB 2********************* -->
+      <div class="tab-pane" id="tabs-2" role="tabpanel">
+        <div class="inventory"
+        style="background-color: white;position: relative;border: 2px solid white;">
+        <div style="overflow-x:auto;">
+          <table class="table table-bordered listinventory">
+            <thead>
+              <tr>
+                <th scope="col" colspan="13" style="text-align:left;">THÔNG TIN SET QUÀ STRONGBOW</th>
+              </tr>
+              <tr>
+                <th scope="col" rowspan="3" style="text-align: center; vertical-align: middle !important;">Set quà
+                </th>
+                <th scope="col" colspan="3">Sản Phẩm</th>
+                <th scope="col" rowspan="3" style=" vertical-align: middle !important;"><a href="" data-toggle="modal"
+                    data-target="#myModal" style="color: white">+
+                    Thêm set mới</a></th>
+              </tr>
+              <tr>
+                <th scope="col">Ly Strongbow</th>
+                <th scope="col">Túi Canvas Strongbow</th>
+                <th scope="col">Túi du lịch Strongbow</th>
+              </tr>
+              <tr>
+                <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                    src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                    alt=""></th>
+                <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                    src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                    alt=""></th>
+                <th scope="col" class="inventory-img"><img style="height: 50px; width: auto;"
+                    src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                    alt=""></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>
+                  <p style="color: green;">Hết set</a>
+                </td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>
+                  <p style="color: green;">Đang dùng</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td>
+                  <p style="color: green;">Set tiếp theo</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>1</td>
+                <td>1</td>
+                <td>1</td>
+                <td><button type="button" class="btn btn-danger">Xóa</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
 
 
     <!-- ****** thêm set ****** -->
-<style>
-  .modal th{
-    text-align: center;
-  }
-  .modal td{
-    text-align: center;
-  }
-</style>
+    <style>
+      .modal th {
+        text-align: center;
+      }
+
+      .modal td {
+        text-align: center;
+      }
+    </style>
     <div class="modal fade" id="myModal" role="dialog">
       <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title" style="color: green;">Thêm set mới</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th>Hình quà</th>
-                      <th>Tên quà</th>
-                      <th>Số lượng</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><img style="height: 30px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></td>
-                      <td>quà 1</td>
-                      <td><input type="text"></td>
-                    </tr>
-                    <tr>
-                      <td><img style="height: 30px; width: auto;" src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg" alt=""></td>
-                      <td>quà 2</td>
-                      <td><input type="text"></td>
-                    </tr>
-                  </tbody>
-                </table>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" style="color: green;">Thêm set mới</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
           </div>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Hình quà</th>
+                <th>Tên quà</th>
+                <th>Số lượng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img style="height: 30px; width: auto;"
+                    src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                    alt=""></td>
+                <td>quà 1</td>
+                <td><input type="text"></td>
+              </tr>
+              <tr>
+                <td><img style="height: 30px; width: auto;"
+                    src="https://cdn.tgdd.vn/Products/Images/2282/77592/bhx/thung-24-lon-bia-heineken-330ml-202012101537020085.jpg"
+                    alt=""></td>
+                <td>quà 2</td>
+                <td><input type="text"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-  </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
 
 </html>
