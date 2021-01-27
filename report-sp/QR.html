@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body style="width: 100%; background-color: #058400;">
@@ -87,7 +88,7 @@
                 src="https://toplist.vn/images/800px/tiem-chup-anh-the-lay-ngay-dep-nhat-o-hue-chu-de-da-duoc-nhan-cua-kieu-nguyen-317636.jpg"
                 alt="" class="img-fluid">
             </div>
-            
+
             <div style="width: 100%; text-align: center;">
               <!-- TỔNG SỐ SAO CỦA NHÂN VIÊN -->
               <h1>3.5</h1>
@@ -217,6 +218,15 @@
             <input type="text" class="form-control" id="usr">
 
             <hr />
+            <b>Hình Voucher :</b> <button type="button" class="btn btn-warning" onClick="showCamera('Android! Start Camera')"><i style="font-size: 20px;" class="fa fa-camera"></i></button>
+
+            <script type="text/javascript">
+              function showCamera(toast) {
+                Android.showCamera(toast);
+              }
+            </script>
+
+            <hr />
             <div class="row pb-2">
               <div class="col-8" style="color: #0889D4;">Anh/chị có thưởng cho nhân viên thẻ cào điện thoại/phiếu siêu
                 thị hay không? </div>
@@ -232,8 +242,8 @@
             <p class="text-left" style="margin:0"> <i>*Tên người đánh giá:</i> </p>
             <input type="text" class="form-control" id="usr">
 
-            <button type="button" class="btn btn-success mt-2"
-              style="width:100%;">Lưu</button>
+
+            <button type="button" class="btn btn-success mt-2" style="width:100%;">Lưu</button>
           </div>
 
         </div>
