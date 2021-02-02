@@ -218,46 +218,69 @@
             <input type="text" class="form-control" id="usr">
 
             <hr />
-            <b>Hình Voucher :</b> <button type="button" class="btn btn-warning" onClick="showCamera('Android! Start Camera')"><i style="font-size: 20px;" class="fa fa-camera"></i></button>
+            <style>
+              .image-upload>input {
+                display: none;
+              }
 
-            <script type="text/javascript">
-              function showCamera(toast) {
-                Android.showCamera(toast);
+              .image-upload img {
+                width: 50px;
+                cursor: pointer;
+              }
+
+              img {
+                max-width: 180px;
+              }
+
+              input[type=file] {
+                padding: 10px;
+                background: #2d2d2d;
+              }
+            </style>
+            <script>
+              function readURL(input) {
+                if (input.files && input.files[0]) {
+                  var reader = new FileReader();
+
+                  reader.onload = function (e) {
+                    $('#blah')
+                      .attr('src', e.target.result);
+                  };
+
+                  reader.readAsDataURL(input.files[0]);
+                }
               }
             </script>
-
-            <hr />
-            <div class="row pb-2">
-              <div class="col-8" style="color: #0889D4;">Anh/chị có thưởng cho nhân viên thẻ cào điện thoại/phiếu siêu
-                thị hay không? </div>
-              <div class="col-4">
-                <select class="form-control" id="sel1">
-                  <option>Có</option>
-                  <option>Không</option>
-                </select>
-              </div>
+            <div class="image-upload">
+              <b>Hình Voucher :</b>
+              <label for="file-input">
+                <img src="http://simpleicon.com/wp-content/uploads/camera.png" />
+              </label>
+              <input type="file" accept="image/*" capture="camera" id="file-input" onchange="readURL(this)">
+              <img id="blah" src="https://www.white.com.pt/wp-content/uploads/2018/08/white_id_negativo_monocroma__tico-300.png" alt="your image" />
             </div>
 
-            <p class="text-left pt-2"> <i>*Tài khoản: nguyenvannam_nv</i> </p>
-            <p class="text-left" style="margin:0"> <i>*Tên người đánh giá:</i> </p>
-            <input type="text" class="form-control" id="usr">
+
+            <p class=" text-left pt-2"> <i>*Tài khoản: nguyenvannam_nv</i> </p>
+              <p class="text-left" style="margin:0"> <i>*Tên người đánh giá:</i> </p>
+              <input type="text" class="form-control" id="usr">
 
 
-            <button type="button" class="btn btn-success mt-2" style="width:100%;">Lưu</button>
+              <button type="button" class="btn btn-success mt-2" style="width:100%;">Lưu</button>
+            </div>
+
           </div>
-
         </div>
       </div>
     </div>
-  </div>
 
 
 
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
